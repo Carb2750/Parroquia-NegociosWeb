@@ -1,0 +1,33 @@
+.page-directions{
+    padding: 10vh 1em 1em 1em !important;
+    min-height: 100vh;
+    .direcciones{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      button{
+        border-radius: 5px;
+        height: 50px;
+        padding: 5px;
+        margin: 0.5em;
+        font-size: 0.8em;
+      }//Button
+    }//Direcciones
+    .check-info{
+      padding: 1em !important;
+    }//total,Check-info
+  
+    .check-info{
+      .row{
+        margin: 1.5em;
+      }
+      button{
+      
+      }
+      input,select,textarea{
+        padding: 0.5em !important;
+        border-radius: 3px;
+      }//input,select,textarea
+    }//Check-Info
+  }//Page Checkout

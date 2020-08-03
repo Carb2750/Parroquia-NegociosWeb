@@ -1,0 +1,42 @@
+.page-table{
+  h1{
+    color: $pageWhite;
+  }
+  .buscador{
+    form{
+      input, button,select{
+        padding: 0.5em !important;
+      }
+    }
+  }
+  .table{
+    
+      table{
+        min-width: 95vw;
+        thead{
+          
+          th{
+            
+            a{
+              
+            }
+          }//Thead Data
+        }//THead
+        tbody{
+         
+          tr{
+            
+            td{
+                
+              a{
+                
+                text-align: center;
+                margin: 0.2em;
+                width: 50px;   
+              }
+            }//TData
+          }//TRow
+        }//Tbody
+      }//Table
+  }//Table Class
+}//Buscador

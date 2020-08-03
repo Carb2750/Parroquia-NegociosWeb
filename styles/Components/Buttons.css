@@ -1,0 +1,42 @@
+.left-btn {
+    transform: rotate(-90deg);
+
+}
+
+.right-btn {
+    transform: rotate(90deg);
+}
+
+.left-btn svg path, .right-btn svg path {
+    fill: #ffffff;
+}
+
+.center-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#movimientos-btn svg path {
+    fill: #FBEA9A;
+}
+
+#eventos-btn svg path {
+    fill: #EB7878;
+}
+
+#extensiones-btn svg path {
+    fill: #ACF493;
+}
+
+.preJuveniles-btn {
+    background-color: #64CFBC;
+}
+
+.Juveniles-btn {
+    background-color: #F8D270;
+}
+
+.preComunidades-btn {
+    background-color: #70C5E0;
+}

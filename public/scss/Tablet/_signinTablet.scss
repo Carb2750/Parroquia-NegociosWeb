@@ -1,0 +1,26 @@
+.flex{
+    .form{
+      height: 70vh;
+      align-items: center;
+      input{
+        font-size: 1em;
+        padding: 0.2em;
+        min-width: 5px;
+      }
+      button{
+        font-size: 1.2em;
+        border: 2px solid $pageWhite;
+        border-radius: 5px;
+        &:hover{
+          background-color: $pageRed;
+          transition: all 0.3s ease-in-out, left 0.3s ease-in-out;
+          color: $pageWhite;
+        }
+      }
+      .errors{
+        border-radius: 32px;
+        min-width: 90%;
+        padding: 1em;
+      }
+    }
+    }

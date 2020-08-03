@@ -1,0 +1,39 @@
+.page-table{
+
+  h1{
+  }
+  .buscador{
+    form{
+      input, button,select{
+        padding: 0.7em !important;
+      }
+    }
+  }
+  .table{
+    
+      table{
+        font-size: 1em;
+        thead{
+          
+          th{
+            
+            a{
+              
+            }
+          }//Thead Data
+        }//THead
+        tbody{
+         
+          tr{
+            
+            td{
+                
+              a{
+                padding: 0.4em;
+              }
+            }//TData
+          }//TRow
+        }//Tbody
+      }//Table
+  }//Table Class
+}//Buscador

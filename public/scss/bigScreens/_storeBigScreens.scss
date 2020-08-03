@@ -1,0 +1,127 @@
+.line-red{
+    height: 15vw;
+    width: 10px;
+    border-radius: 7px;
+  }
+  .page-store{
+    .filter-options{
+      transform: translateX(00px);
+      z-index: 1;
+      position: fixed;
+      top: 15vh;
+      left:2vw;
+      width: 20vw;
+      height: auto;
+      background-color: transparent;
+      opacity: 1;
+      
+      legend{
+        font-size: 1.5em;
+        margin-top: 4vh !important;
+      }
+      
+      button{
+        display:block;
+        margin-top: 3vh !important;
+        background-color: inherit;
+        border: none;
+        font-size: 1.3em;
+        padding: 1vh !important;
+  
+        cursor: pointer;
+      }
+      transition: transform 0.7s ease-in;
+    }//filter-options
+    .filter-options.show{
+      pointer-events: none;
+    }
+      .products{
+        .items{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          flex-wrap: nowrap;
+          position: relative;
+          top: 10vh;
+          margin-bottom: 10vw;
+          form{
+            padding: 0.4em !important;
+            margin-top: 5vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-radius: 21px;
+            .opciones{
+              padding: 2em;
+              display: flex;
+              flex-direction: column;
+              label{
+                display: block;
+                cursor: pointer;
+                user-select: none;
+                position: relative;
+                
+                font-size: 1.2em;
+                input{
+                  position: absolute;
+                  opacity: 0;
+                  cursor: pointer;
+                  &:checked ~ .checkmark{
+                      background-color: $pageRed;
+                      border-radius: 5px;
+                      transform: rotate(0deg) scale(1);
+                      opacity:1;
+                    &::after{
+                      transform: rotate(45deg) scale(1);
+                      opacity:1;
+                      left: 6.8px;
+                      top: 0.7px;
+                      width: 4px; 
+                      height: 12px;
+                      border-width: 0 3px 3px 0;
+                      border-radius: 0;
+                    }
+                  }
+                }//Input
+                .checkmark{
+                  top: 6px;
+                  left: -23px;
+                  width: 22px;
+                  height: 22px;
+                  border-radius: 5px;
+                  &::after{
+                    top: 3px;
+                    height: 0px;
+                    width: 0px;
+                    border-radius: 5px;
+                    border-width: 0 3px 3px 0;
+                    transform: rotate(0deg) scale(0);
+                    opacity:1;
+                  }
+                }//checkmark
+                
+              }//label
+              p{
+                margin-top: 1vh;
+                font-size: 0.8em;
+              }
+             
+            }//Opciones
+            h2{
+              font-weight: bold;
+              font-size: 2em;
+              padding: 1em;
+            }
+            h3{
+              font-size: 2em;
+            }
+            button{
+              border-radius: 5px;
+              padding: 0.3em;
+              font-size: 1.2em;
+              margin: 0.5em;
+            }
+          }//Form
+        }
+      }
+  }//Page-Sotre

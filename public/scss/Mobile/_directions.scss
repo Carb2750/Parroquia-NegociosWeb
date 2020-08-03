@@ -1,0 +1,60 @@
+.page-directions{ //trbl
+    padding: 10vh 0.5em 0.5em 0.5em !important;
+    min-height: 100vh;
+    background-color: $pageRed;
+    display: flex;
+    flex-direction: column; 
+    .direcciones{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      button{
+        position: relative;
+        border-radius: 5px;
+        height: 50px;
+        padding: 5px;
+        margin: 0.5em;
+        border: none;
+        background-color: transparent;
+        @include buttonHover($pageRed, $pageWhite);
+        font-size: 0.8em;
+      }//Button
+    }//Direcciones
+  .check-info{
+      border-radius: 15px;
+      color: $pageWhite;
+      padding: 1em !important;
+      
+    }//total,Check-info
+    .check-info{
+      background-color: $pageBlack;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+  
+      .row{
+        margin: 1.5em;
+      }
+      input,select,textarea{
+        padding: 0.5em !important;
+        border-radius: 3px;
+        border: none;
+        resize: none;
+      }//input,select,textarea
+      textarea{
+        height: 250px;
+      }
+      h2{
+        font-size: 1.2em;
+        margin: 0.5em;
+        text-align: left;
+      }
+    
+    }//Check-Info
+    
+    #show{
+      transition: 0.5s all ease-in-out;
+      
+    }
+  }//Page Directions

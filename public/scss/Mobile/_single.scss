@@ -1,0 +1,42 @@
+.page-single{
+  background-color: $pageRed;
+  min-height: 100vh;
+
+  padding-top: 3.5em;
+  padding: 0.7em;
+  h1,h2{
+    color: $pageWhite;
+    font-size: 1.5em;
+  }
+  
+  .single-form{
+    display: flex;
+    justify-content: center;
+    form{
+        margin-top: 2em;
+        background-color: $pageBlack;
+        opacity: 0.9;
+        box-shadow: 0px 7px 20px #2e2e2e;
+        border-radius: 9px;
+      .single-input{
+        padding: 0.5em;
+        margin: 0.5em;
+        label{
+          color: $pageWhite;
+        }
+        input,select{
+          border: none;
+          border-radius: 2px;
+          padding: 0.3em !important;
+        }
+
+      }
+      .single-buttons{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  }
+}

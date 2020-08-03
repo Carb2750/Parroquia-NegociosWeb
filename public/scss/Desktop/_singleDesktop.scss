@@ -1,0 +1,37 @@
+.page-single{
+    background-color: $pageRed;
+    min-height: 100vh;
+  
+    padding-top: 3.5em;
+    padding: 3em;
+    h1,h2{
+      color: $pageWhite;
+      font-size: 1.5em;
+    }
+    
+    .single-form{
+
+      form{
+        margin-top: 2em;
+        background-color: $pageBlack;
+        opacity: 0.9;
+        box-shadow: 0px 7px 20px #2e2e2e;
+        border-radius: 9px;
+        .single-input{
+          padding: 0.5em;
+          margin: 1em;
+          label{
+            color: $pageWhite;
+          }
+          input,select{
+            border: none;
+            border-radius: 4px;
+            padding: 0.5em !important;
+            text-align: right;
+          }
+        }
+        .single-buttons{
+        }
+      }
+    }
+  }   

@@ -1,0 +1,13 @@
+#section-frase {
+    background-color: #222431;
+    color: #e7e7e7;
+    display: flex;
+    justify-content: center;    
+}
+
+#section-frase p {
+    padding: 20px;
+    font-style: italic;
+    font-size: 18px;
+    text-align: justify;
+}

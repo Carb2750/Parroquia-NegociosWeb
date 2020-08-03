@@ -1,0 +1,194 @@
+.line{
+  background-color: $pageWhite;
+  height: 5px;
+}
+.line-red{
+  background-color: $pageRed;
+  height: 5px;
+}
+
+.page-store{
+  overflow: hidden;
+  min-height: 100vh;
+  background-color: $pageRed;
+    .filter{
+      position: fixed;
+      z-index: 11;
+      bottom: 4vh;
+      left: 5vw;
+
+      background-color: $pageBlack;
+      height: 50px;
+      width: 50px;
+      border-radius: 999px;
+      opacity: 0.9;
+      a{
+        display: block;
+        position: relative;
+        top: 5.5px;
+        left: 10px;
+        font-size: 1.7em;
+        color: $pageWhite;
+      }
+      transition: transform 0.7s ease-in;
+    }//filter
+    .filter.open{
+      background-color: $pageWhite;
+      opacity: 1;
+      a{
+        color: $pageRed;
+        transition: all 1s ease-in;
+      }
+      transition: all 0.8s ease-out;
+    }
+    .filter-options{
+      overflow: hidden;
+      transform: translateX(-900px);
+      position: fixed;
+      z-index: 11;
+      
+      top: 0px;
+      left:0px;
+      
+      height: 100vh;
+      color: $pageWhite;
+      background-color: $pageBlack;
+      opacity: 0.9;
+      legend{
+        font-size: 1.5em;
+        margin-top: 10vh !important;
+      }
+      
+      button{
+        display:block;
+        margin-top: 3vh !important;
+        background-color: inherit;
+        border: none;
+        font-size: 1.3em;
+        padding: 1vh !important;
+        color: $pageWhite;
+        cursor: pointer;
+        &:hover{
+          cursor: pointer;
+          color: $pageRedLighter;
+        }
+      }
+      transition: transform 0.7s ease-in;
+    }//filter-options
+    .filter-options.show{
+      transform: translateX(0px);
+      transition: transform 0.7s ease-out;
+    }
+    .products{
+      .items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-top: 12vh !important;
+        form{
+          margin-top: 5vh;
+          margin: 0.8em;
+          background-color: $pageBlack;
+          color: $pageWhite;
+          border-radius: 21px;
+          .opciones{
+            display: flex;
+            flex-direction: column;
+            label{
+              position: relative;
+              left: 20px;
+              display: block;
+              cursor: pointer;
+              user-select: none;
+              font-size: 1.1em;
+              padding: 0.2em;
+              margin: 5px;
+              input{
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                &:checked ~ .checkmark{
+                    background-color: $pageRed;
+                    border-radius: 5px;
+                    transform: rotate(0deg) scale(1);
+                    opacity:1;
+                  &::after{
+                    transform: rotate(45deg) scale(1);
+                    opacity:1;
+                    left: 7px;
+                    top: 2px;
+                    width: 3px; 
+                    height: 9px;
+                    border: solid $pageWhite;
+                    border-width: 0 2px 2px 0;
+                    background-color: transparent;
+                    border-radius: 0;
+                  }
+                }
+              }//Input
+              .checkmark{
+                position: absolute;
+                top: 5px;
+                left: calc(1vw - 0.3vh);
+                width: 22px;
+                height: 22px;
+                background-color: $pageWhiteGrey;
+                border-radius: 5px;
+                transition: all 0.3s ease-out;
+                border: 2px solid $pageRedDarker;
+                &::after{
+                  position: absolute;
+                  content: "";
+                  left: -12px;
+                  top: 5px;
+                  height: 0px;
+                  width: 0px;
+                  border-radius: 5px;
+                  border: solid $pagePink;
+                  border-width: 0 3px 3px 0;
+                  transform: rotate(0deg) scale(0);
+                  opacity:1;
+                  transition: all 0.3s ease-out;
+                }
+              }//checkmark
+              
+            }//label
+            p{
+              margin-top: 1vh;
+              font-size: 0.8em;
+            }
+          }//Opciones
+          .foto{
+            position: relative;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            h2{
+              font-weight: bold;
+              font-size: 1.5em;
+            }
+          }//foto
+          button{
+            border-radius: 9px;
+            border: none;
+            background-color: $pageRedDarker;
+            color: $pageWhite;
+            padding: 0.5em;
+            font-size: 1.1em;
+            margin: 0.8em;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+              background-color: $pageWhite;
+              box-shadow: 0px 0px 8px $pageBlack;
+              color: $pageRed;
+              transition: all 0.5s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+}//Page-Sotre

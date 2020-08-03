@@ -1,0 +1,1 @@
+INSERT INTO `foodservice`.`payment` (`paymentCod`, `paymentDscES`, `paymentDscEN`, `paymentLib`, `paymentState`) VALUES ('PPL', 'Pago Con Paypal', 'Paypal Payment', 'paypal', 'ACT');

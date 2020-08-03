@@ -1,0 +1,25 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0%;
+    padding: 0.5vh 0em;
+    background-color: var(--primary-color);
+    box-shadow: 0px -2px 4px #272727;
+    z-index: 10;
+    color: var(--secondary-color);
+}
+
+footer p {
+    margin-left: 2em;
+    font-weight: bold;
+}
+
+footer i {
+    margin-right: 2em;
+}
+
+footer i img {
+    width: 2em;
+    height: 2em;
+}

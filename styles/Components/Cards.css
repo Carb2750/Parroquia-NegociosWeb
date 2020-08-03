@@ -1,0 +1,277 @@
+.card {
+    position: relative;
+    width: 80vw;
+    height: 50vh;
+    margin-top: 1em;
+}
+
+.card h3 {
+    text-align: center;
+    /*color: #000000;*/
+    margin-bottom: 7px;
+    font-size: 1.3em;
+}
+
+.card h4 {
+    text-align: center;
+    color: #000000;
+    font-size: 1.3em;
+}
+
+.card a {
+    text-decoration: none;
+    color: #285576;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card a:after {
+    content: "\27A4";
+    margin-left: 10px;
+}
+
+.inner-circle, .outer-circle {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .outer-circle {
+    width: 150px;
+    height: 150px;
+}
+
+.space-bottom {
+    margin-bottom: 15px;
+}
+
+.outer-card {
+    flex: 0 0 auto;
+    margin-right: 5px;
+    margin-left: 2px;
+}
+
+.outer-card h4 {
+    margin: 8px;
+}
+
+.inner-card {
+    width: 95%;
+    height: 95%;
+    margin: 0;
+    margin-bottom: 3%;
+}
+
+.round-card {
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.card .inner-circle {
+    width: 90%;
+    height: 90%;
+    background-color: #ffffff;
+}
+
+.card img {
+    width: 60%;
+    height: 60%;
+}
+
+.coordinador-card img, .sacramentosPage-card img {
+    width: 100%;
+}
+
+.inner-card img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.card #church-img {
+    width: 80%;
+    height: 80%;
+}
+
+.card #events-img {
+    width: 100%;
+    height: 100%;
+}
+
+.card #reloj-img {
+    width: 85%;
+    height: 85%;
+}
+
+.card #sacramentos-img {
+    width: 90%;
+    height: 90%;
+}
+
+.card button {
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coordinador-card, .sacramentosPage-card {
+    background-color: #ffffff;
+}
+
+.coordinador-card p, .sacramentosPage-card p {
+    padding: 0px 2px;
+    text-align: center;
+}
+
+.card button svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg);
+}
+
+.sacramentos-card, .sacramentosPage-card {
+    height: 50vh;
+}
+
+.card-front, .card-back {
+    overflow: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .6s linear;
+    box-shadow: 2px 4px 2px black;
+}
+
+.card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transform: perspective(600px) rotateY(0deg);
+}
+
+#movimientos-card {
+    background-color: #FBEA9A;
+}
+
+#eventos-card {
+    background-color: #EB7878;
+}
+
+#extensiones-card {
+    background-color: #ACF493;
+}
+
+#sacramentos-card { 
+    background-color: #B468FF;
+}
+
+#preJuveniles-card {
+    background-color: #64CFBC;
+}
+
+#juveniles-card {
+    background-color: #F8D270;
+}
+
+#preComunidades-card {
+    background-color: #70C5E0;
+}
+
+.card-back {
+    background-color: #FEFEFE;
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.back-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.back-content ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+    color: #285576;
+    margin: 5px 0px;
+}
+
+.back-content li {
+    /*margin: 10px 0px;*/
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.card:hover > .card-front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover > .card-back {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.li-space {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.li-date {
+    color: #000000;
+    font-size: 15px;
+}
+
+.back-content .height-80 {
+    height: 80%;
+}
+
+.card .no-before:after {
+    content: none;
+}
+
+.card .mas-info-btn {
+    font-size: 30px;
+}
+
+.card .mas-info-btn:hover {
+    cursor: pointer;
+    background-color: #276ba0;
+}
+
+/*.card .blue-color:hover {
+    background-color: #276ba0;
+}*/
+
+.card .mas-info-btn svg {
+    transform: rotate(0deg);
+}
+
+.card .mas-info-btn svg path {
+    fill: #ffffff;
+}
+
+/*.card-2 {
+    flex: 1 2;
+}*/
+
+.date-p {
+    font-size: 60px;
+    font-weight: bold;
+}

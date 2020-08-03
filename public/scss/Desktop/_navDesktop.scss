@@ -1,0 +1,44 @@
+header{
+    .title{
+      a{
+        p{
+          
+          img{
+            width: 38px;
+            height: 38px;
+          }
+        }//a link
+      }//Title
+    }//Header
+    nav{
+      .nav-links{
+        flex-direction: row;
+        li{
+          a{
+            font-size: 0.9em;
+          }
+        }
+        .button-1{
+          a{
+            font-size: 1em;
+            width: 70%;
+          }
+        }
+      }
+    }
+    nav{
+      height: 6vh;
+      .slide{
+        right: -450px;
+        li{
+          width: 350px;
+        }
+        font-size: 1em;
+        justify-content: stretch;
+        .logout{
+          width: 100%;
+        }
+      }
+      
+    }
+  }

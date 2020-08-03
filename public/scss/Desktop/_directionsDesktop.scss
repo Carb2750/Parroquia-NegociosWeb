@@ -1,0 +1,28 @@
+.page-directions{
+    padding: 1em;
+    min-height: 100vh;
+    .direcciones{
+      button{
+        border-radius: 5px;
+        height: 70px;
+        padding: 5px;
+        margin: 0.5em;
+        background-color: $pageRed;
+        font-size: 1em;
+      }//Button
+    }//Direcciones
+    .check-info{
+      padding: 1em !important;
+    }//total,Check-info
+    .check-info{
+      .button-3{
+        height: 60px;
+      }
+      .row{
+        margin: 1.5em;
+      }
+      input,select{
+        
+      }//input,select,textarea
+    }//Check-Info
+  }//Page Checkout

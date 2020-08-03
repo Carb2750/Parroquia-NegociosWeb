@@ -1,0 +1,152 @@
+.page-table{
+  background-color: $pageRedDarker;
+  min-height: 100vh;
+  padding-top: 5em;
+  h1{
+    color: $pageWhite;
+  }
+  .buscador{
+    form{
+      input, button, select{
+        padding: 0.2em !important;
+      }
+      button{
+        color: $pageRed;
+        background-color: $pageWhite;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+          box-shadow: 1px 1px 6px #8d8d8d;
+          color: $pageWhite;
+          background-color: $pageRed;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+  .table{
+   margin-top: 5em;
+    overflow-x: auto;
+    width: 100%;
+      table{
+        overflow: hidden;
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: 0.7em;
+        thead{
+          border: 10px solid $pageRedDarker;
+          border-radius: 15px;
+          background-color: $pageBlack;
+          color: $pageWhite;
+          th{
+            text-align: center;
+            padding: 0.5em;
+            font-weight: bold;
+            
+          }//Thead Data
+        }//THead
+        tbody{
+          border: 10px solid $pageRedDarker;
+          tr{
+            
+            height: 7vh;
+            background-color: $pageBlack;
+            td{
+              width: 20%;
+              padding: 0.4em;
+              text-align: center;
+              color: $pageWhite;
+              
+              a{
+                display: inline-block;
+                background-color: $pageRedDarker;
+                color: $pageWhite;
+                border-radius: 7px;
+                text-align: center;
+                padding: 0.3em;
+                width: 90%;
+                margin: 4px;
+               
+              }
+              span{
+                font-size: 0.9em;
+              }
+             
+            }//TData
+            
+            &:hover{
+              background-color: $pageRed;
+              color: $pageWhite;
+              box-shadow: 0px 0px 5px $pageDark;
+              transition: all 0.1s ease-out;
+              
+              td{
+                
+                a{
+                  background-color: $pageWhite;
+                  color: $pageRed;
+                  transition: all 0.2s ease-in-out;
+                  &:hover{
+                    box-shadow: 1px 1px 10px #2e2e2e;
+                    transition: all 0.2s ease-in-out;
+                  }
+                }
+              }
+            }
+          }//TRow
+          
+             
+            .order-detail{
+              padding: 0em;
+              position: relative;
+              font-size: 12px !important;
+              pointer-events: none;
+              background-color: $pageWhite;
+              .data{
+                padding: 1em;
+                font-family: 'Inconsolata', monospace;
+                width: 100vw;              
+                text-align: left;
+                color: $pageDark;
+              }
+              &:hover{
+                pointer-events: none;
+              }
+              
+            }
+           
+            
+            .hide{
+              transition: all 5s ease-in-out;
+              display: none;
+             
+            }
+          
+          
+        }//Tbody
+      }//Table
+  }//Table Class
+  .pagination{
+    position: relative;
+    top: 30px;
+    ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      li{
+        text-align: center;
+        width: 30px;
+        
+        a{
+          border-radius: 3px;
+          &:hover{
+            background-color: $pagePink;
+          }
+        }
+        .selected{
+          background-color: $pageSalmon;
+          color: $pageDark;
+        }
+      }
+    }
+  }//pagination
+}//Buscador

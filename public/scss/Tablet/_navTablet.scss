@@ -1,0 +1,90 @@
+
+ header{
+    .title{
+      a{
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+        p{
+          display: flex;
+          align-items: center;
+          padding: 0px;
+          img{
+            align-self: center;
+            width: 37px;
+            height: 37px;
+          }
+        }
+      }//a link
+    }//Title
+    nav{
+      display: flex;
+      height: 6vw;
+      .nav-links{
+        background-color: transparent;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: static;
+        height: 100%;
+        clip-path: none;
+          li{    
+           
+            position: static;
+              a{
+                padding: 0px;
+                &.hover:hover{
+                  color: $pageWhite;
+                  background-color: transparent;
+                }
+                &.hover:after{
+                  content: "";
+                  display: block;
+                  height: 2px;
+                  width: 0;
+                  left: 50%;
+                  bottom: 0;
+                  position: relative;
+                  background: #fff;
+                  transition: all 0.3s ease-in-out, left 0.3s ease-in-out;
+                }
+                &:hover:after { 
+                  width: 60%; 
+                  left: 18%; 
+                }
+              }
+          }    
+      }//nav-links
+      .button-1{
+        border-radius: 15px;
+        max-width: 25%;
+        margin: 0.5em;
+        a{
+          background-color: $pageRed;
+          width: 100%;
+          &:hover{
+            transition: all 0.5s ease-in-out;
+            border-radius: 15px;
+          }
+        }
+      }
+      .nav-links.open{
+        clip-path: none;
+      }
+      .slide{
+        width: auto;
+        justify-content: flex-start;
+        li{
+          width: 250px;
+        }
+        .button-2{
+          font-size: 1.4em;
+          top: 20px;
+          right: 15px;
+        }
+      }
+    }//Nav
+  }//Header End
+  .burger {
+      display: none;
+  }

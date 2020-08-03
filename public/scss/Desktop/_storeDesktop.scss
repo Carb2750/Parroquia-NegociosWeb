@@ -1,0 +1,151 @@
+.line-red{
+  height: 15vw;   
+}
+.line{
+  background-color: $pageWhite;
+}
+.page-store{
+  .filter{
+    display: none;
+  }//filter
+  .filter.open{
+    pointer-events: none;
+  }
+  .filter-options{
+    overflow: hidden;
+    transform: translateX(00px);
+    z-index: 1;
+    position: fixed;
+    top: 15vh;
+    left:2vw;
+    width: 20vw;
+    height: auto;
+    color: $pageWhite;
+    background-color: transparent;
+    opacity: 1;
+    
+    legend{
+      font-size: 1.5em;
+      margin-top: 4vh !important;
+    }
+    
+    button{
+      display:block;
+      margin-top: 3vh !important;
+      background-color: inherit;
+      border: none;
+      font-size: 1.3em;
+      padding: 1vh !important;
+      color: $pageWhite;
+      &:hover{
+        color: $pageDark;
+      }
+    }
+    transition: transform 0.7s ease-in;
+  }//filter-options
+  .filter-options.show{
+    pointer-events: none;
+  }
+    .products{
+      .items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        position: relative;
+        top: 10vh;
+        margin-bottom: 20vw;
+        padding-top: 6vh !important;
+        form{
+          padding: 0.4em !important;
+          margin-top: 5vh;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          color: $pageWhite;
+          border-radius: 21px;
+          .opciones{
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            label{
+              display: block;
+              cursor: pointer;
+              user-select: none;
+              position: relative;
+              font-size: 0.8em;
+              input{
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                &:checked ~ .checkmark{
+                    border-radius: 5px;
+                    transform: rotate(0deg) scale(1);
+                    opacity:1;
+                  &::after{
+                    transform: rotate(45deg) scale(1);
+                    opacity:1;
+                    left: 6px;
+                    top: 1px;
+                    width: 3px; 
+                    height: 9px;
+                    border-width: 0 2px 2px 0;
+                    border-radius: 0;
+                  }
+                }
+              }//Input
+              .checkmark{
+                top: 4px;
+                left: -25px;
+                width: 18px;
+                height: 18px;
+                border-radius: 5px;
+                transition: all 0.3s ease-out;
+                &::after{
+                  top: 3px;
+                  height: 0px;
+                  width: 0px;
+                  border-radius: 5px;
+                  border-width: 0 3px 3px 0;
+                  transform: rotate(0deg) scale(0);
+                  opacity:1;
+                }
+              }//checkmark
+              
+            }//label
+            p{
+              margin-top: 1vh;
+              font-size: 0.8em;
+            }
+           
+          }//Opciones
+          .foto{
+            position: relative;
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            h2{
+              position: relative;
+              top:  -25%;
+              font-weight: bold;
+              font-size: 1em;
+            }
+          }//foto
+          h3{
+            font-size: 1em;
+          }
+          button{
+            border-radius: 5px;
+            padding: 0.1em;
+            font-size: 1em;
+            margin: 0.5em;
+          }
+        }//Form
+      }
+    }
+}//Page-Sotre

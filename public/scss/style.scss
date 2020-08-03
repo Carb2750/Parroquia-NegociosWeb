@@ -1,0 +1,55 @@
+
+/*Mobile Screen*/
+@import 'General&Colors/general';
+
+
+@import 'Mobile/grid';
+@import'Mobile/nav';
+@import 'Mobile/hero';
+
+@import'Mobile/signin';
+
+@import 'Mobile/table';
+@import 'Mobile/single';
+
+@import 'Mobile/store';
+@import 'Mobile/cart';
+@import 'Mobile/checkout';
+@import 'Mobile/directions';
+/*Tablet Screen*/
+@media (min-width:415px) {
+  @import 'Tablet/gridTablet';
+  @import 'Tablet/navTablet';
+  @import 'Tablet/storeTablet';
+  @import 'Tablet/cartTablet';
+  @import 'Tablet/checkoutTablet';
+  @import 'Tablet/signinTablet';
+
+  @import 'Tablet/singleTablet';
+  @import 'Tablet/tableTablet';
+  @import 'Tablet/directionsTablet';
+  @import 'Tablet/heroTablet';
+}
+/*Desktop Screens*/
+  @media (min-width:1024px) {
+    @import 'Desktop/singleDesktop';
+    @import 'Desktop/gridDesktop';
+    @import 'Desktop/cartDesktop';
+    @import 'Desktop/navDesktop';
+    @import 'Desktop/signinDesktop';
+    @import 'Desktop/tableDesktop';
+    @import 'Desktop/storeDesktop';
+    @import 'Desktop/checkoutDesktop';
+    @import 'Desktop/directionsDesktop';
+    @import 'Desktop/heroDesktop';
+}
+/*tv Screens*/
+  @media (min-width:1300px) {
+    @import 'bigScreens/signinBigScreens';
+    @import 'bigScreens/heroBigScreens';
+    @import 'bigScreens/storeBigScreens';
+    @import 'bigScreens/gridBigScreens';
+    @import 'bigScreens/storeBigScreens';
+    @import 'bigScreens/navBigScreens';
+    
+}

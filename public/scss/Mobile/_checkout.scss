@@ -1,0 +1,113 @@
+.page-checkout{
+    padding-top: 10vh !important;
+    min-height: 50vh;
+    background-color: $pageRed;
+    display: flex;
+    flex-direction: column;
+    .direcciones{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      button{
+        position: relative;
+        border-radius: 5px;
+        height: 50px;
+        width: 80%;
+        padding: 5px;
+        margin: 0.5em;
+        border: none;
+        background-color: transparent;
+        color: $pageWhite;
+        background-color: $pageRed;
+        font-size: 0.8em;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+          background-color: $pageWhite;
+          box-shadow: 0px 0px 15px $pageBlack;
+          color: $pageRed;
+          transition: all 0.5s ease-in-out;
+        }
+      }//Button
+    }//Direcciones
+    .rules{
+      font-size: 0.8em;
+      li{
+        font-style: italic;
+      }
+    }//rules
+    .total,.check-info{
+      border-radius: 15px;
+      color: $pageWhite;
+      padding: 1em !important;
+      
+    }//total,Check-info
+  
+    .total{
+      background-color: $pageBlack;
+      color: $pageWhite;
+      text-align: center;
+      min-height: 40vh;
+      margin-bottom: 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      h2{
+        font-size: 1em;
+      }
+      h3{
+        font-size: 1.5em;
+      }
+    }//total
+    .check-info{
+      background-color: $pageBlack;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+  
+      .row{
+        margin: 1.5em;
+      }
+      input,select,textarea{
+        padding: 0.5em;
+        border-radius: 3px;
+        border: none;
+        resize: none;
+        width: 100%;
+      }//input,select,textarea
+      textarea{
+        height: 250px;
+      }
+      h2{
+        font-size: 1.2em;
+        margin: 0.5em;
+      }
+      .payments{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        button{
+          position: relative;
+          border-radius: 5px;
+          height: 150px;
+          width: 150px;
+          padding: 5px;
+          margin: 0.2em;
+          border: none;
+          background-color: transparent;
+          color: $pageWhite;
+          background-color: $pageRed;
+          font-size: 5em;
+          transition: all 0.5s ease-in-out;
+          &:hover{
+            background-color: $pageWhite;
+            box-shadow: 0px 0px 15px $pageBlack;
+            color: $pageRed;
+            transition: all 0.5s ease-in-out;
+          }
+        }//Button
+      }//Payments
+    }//Check-Info
+  }//Page Checkout

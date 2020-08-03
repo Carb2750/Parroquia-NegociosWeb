@@ -1,0 +1,107 @@
+.line-red{
+    background-color: $pageRed;
+    height: 18vw;
+    width: 3px;
+  }
+  .page-store{
+
+    .filter-options{
+      position: absolute;
+      height: 100vh;
+      legend{
+        margin-top: 6vh !important;
+      }
+      
+      button{
+        font-size: 1.3em;
+        padding: 1vh !important;
+        cursor: pointer;
+      }
+    }//filter-options
+      .products{
+        .items{
+          flex-direction: column;
+          justify-content: center;
+          flex-wrap: nowrap;
+          padding-top: 9vh !important;
+          form{
+            position: relative;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            width: 100%;
+
+            padding: 0.5em !important;
+            .opciones{
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              width: 80%;
+              padding: 0.5em !important;
+              label{
+                position: relative;
+                text-align: center;
+                font-size: 10px;
+                input{
+                  &:checked ~ .checkmark{
+                    &::after{
+                      left: 4px;
+                      top: 1px;
+                      width: 3px; 
+                      height: 6px;
+                    }
+                  }
+                }//Input
+                .checkmark{
+                  top: 0px;
+                  left: -25px;
+                  width: 17px;
+                  height: 17px;
+                  border-radius: 5px;
+                  &::after{
+                    top: 3px;
+                    height: 0px;
+                    width: 0px;
+                  }
+                }//checkmark
+                
+              }//label
+              p{
+                margin-top: 1vh;
+                font-size: 0.4em;
+              }
+             
+            }//Opciones
+            .foto{
+              display: flex;
+              flex-direction: column;
+              align-content: center;
+              align-items: center;
+              justify-content: space-evenly;
+              h2{
+                position: static;
+                font-size: 1em;
+                color: $pageWhite;
+              }
+            }//foto
+            h3{
+              font-size: 1em;
+              color: $pageWhite
+            }
+            button{
+              border-radius: 5px;
+              padding: 0.3em;
+              font-size: 0.8em;
+              margin: 0.5em;
+              width: 70%;
+              &:hover{
+                box-shadow: 0px 0px 4px $pageBlack;
+              }
+            }
+          }//Form
+        }
+      }
+  }//Page-Sotre

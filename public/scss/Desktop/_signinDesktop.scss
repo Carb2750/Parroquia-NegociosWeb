@@ -1,0 +1,55 @@
+.flex{
+  min-height: 100vh;
+    width: 30vw;
+    background-color: $pageRedDarker;
+    opacity: 0.9;
+    position: absolute;
+    display: block;
+    top: 0px;
+    z-index: -2;
+    justify-content: center;
+    .form{
+      border-radius: 0px;
+      background-color: transparent;
+      opacity: .9;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 30vw;
+      height: 85vh;
+      input{
+        padding: 0.4em;
+        font-size: 1em;
+        max-width: 100%;
+      }
+      p{
+        font-size: 1.3em;
+        color: $pageWhite;
+      }
+      .bar{
+        background-color: $pageWhite;
+        height: 3px;
+      }
+      button{
+        cursor: pointer;
+        font-size: 1.3em;
+        border: 1.5px solid $pageWhite;
+        border-radius: 5px;
+      }
+      .errors{
+        border-radius: 32px;
+        min-width: 100%;
+        padding: 1em;
+        background-color: $pageWhite;
+        li{
+          color: $pageRed;
+        }
+      }
+      h1, li{
+        color: $pageWhite;
+      }
+      h1{
+        font-size: 1.5em;
+      }
+    }
+  }

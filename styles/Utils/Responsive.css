@@ -1,0 +1,460 @@
+/*TABLET*/
+
+@media (min-width: 461px) {
+
+    .nav-links {
+        font-size: 2em;
+    }
+
+    .carousel-text h2 {
+        font-size: 4em;
+    }
+
+    .carousel-text h3 {
+        font-size: 3em;
+    }
+
+    .carousel-text button {
+        width: 8em;
+        height: 2.5em;
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 150%;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .card {
+        width: 35vw;
+        height: 30vh;
+    }
+
+    .card-2 {
+        width: 49%;
+        height: 80%;
+    }
+
+    .card h3 {
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    .card button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .card-front {
+        z-index: 1;
+    }
+
+    .card-back {
+        transform: perspective(600px) rotateY(0deg);
+        z-index: 0  ;
+    }
+
+    .card:hover > .card-front {
+        transform: rotate(0deg);
+        transform: translateX(-50%);
+    }
+    
+    .card:hover > .card-back {
+        transform: translateX(50%);
+    }
+
+    .horizontal-scroll {
+        margin: 0 auto;
+    }
+
+    .horizontal-flex span {
+        width: 35px;
+        height: 35px;
+        margin: 0px 20px;
+    }
+    
+    .horizontal-flex span svg {
+        width: 35px;
+        height: 35px;
+        pointer-events: none;
+    }
+
+    .section-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form {
+        font-size: 20px;
+        height: 80%;
+        margin-top: 2%;
+    }
+
+    .enviar-btn {
+        height: 85%;
+    }
+
+    .height-relative {
+        height: 100%;
+    }
+    
+    .width-relative {
+        width: 100%;
+    }
+
+    .f-size-l, .card .f-size-l {
+        font-size: 40px;
+    }
+    
+}
+
+/*DESKTOP*/
+
+@media (min-width: 1025px) {
+    
+    header {
+        padding: 2vh 0;
+    }
+
+    .hamburguer-button {
+        display: none;
+    }
+    
+    nav {
+        overflow: visible;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+/************************************/
+    .nav-container-links {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #A5EFFF00;
+        height: auto;
+        width: auto;
+        font-size: 1.4em;
+        top: 0;
+        margin-right: 50px;
+        pointer-events: all;
+        clip-path: none;
+        -webkit-clip-path: none;
+        transition: none;
+    }
+
+    .nav-links {
+        padding: 2.25vh 1em;
+        font-size: 1em;
+        transition: none;
+    }
+/***************************************/
+
+    .carousel-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        top: 5%;
+        width: 70em;
+        height: 50em;
+        z-index: 2;
+    }
+    
+    .carousel-text h2 {
+        font-size: 5em;
+    }
+
+    .carousel-text button {
+        height: 2em;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+    
+    .carousel-container {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .frame-dot-container {
+        margin: 20px 0px;
+        left: 49%;
+    }
+
+    /*#section-frase {
+        margin-top: 40px;
+    }*/
+
+    #section-frase p {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .section-conocernos {
+        height: 60vh;
+        position: relative;
+    }
+
+    .section-cards, .section-cards-horizontal {
+        height: 100%;
+        /*margin-top: 30px;*/
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding-top: 4em;
+    }
+
+    .section-cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .section-cards h3 {
+        margin: 0;
+    }
+
+    .section-cards-horizontal {
+        flex-direction: column;
+    }
+
+    .column-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom-padding {
+        padding-bottom: 4em;
+    }
+    
+    #section-sacramentos {
+        justify-content: center;
+    }
+    
+    .card {
+        width:  20vw;
+        height: 25em;
+        /*box-shadow: none;*/
+    }
+
+    .card-3 {
+        width: 33%;
+        height: 80%;
+    }
+
+    .card h3 {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
+    .sacramentos-card {
+        width: 20vw;
+        height: 40vh;
+    }
+
+    .sacramentos-card .card-front {
+        z-index: 2;
+    }
+
+    .card-back {
+        transform: perspective(600px) rotateY(180deg);
+        z-index: 0;
+    }
+
+    .card:hover > .card-front {
+        transform: perspective(600px) rotateY(-180deg);
+    }
+    
+    .card:hover > .card-back {
+        transform: perspective(600px) rotateY(0deg);
+    }
+
+    .sacramentos-card .card-back {
+        transform: perspective(600px) rotateY(0deg);
+    }
+
+    .sacramentos-card:hover > .card-front {
+        transform: translateX(0%);
+    }
+    
+    .sacramentos-card:hover > .card-back {
+        transform: translateX(100%);
+    }
+
+    .coordinador-card {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        width: 90vw;
+        height: 60vh;
+        margin-bottom: 20px;
+    }
+
+    .coordinador-card img {
+        width: 31em;
+        height: 31em;
+        margin-left: 50px;
+    }
+
+    .coordinador-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 28em;
+        width: 70vw;
+        margin-left: 20px;
+    }
+
+    .sacramentosPage-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        width: 90vw;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .sacramentosPage-card img {
+        width: 100%;
+        height: 600px;
+        margin: 0;
+    }
+
+    .sacramentosPage-card p {
+        font-size: 20px;
+    }
+    
+    .inner-card {
+        width: 95%;
+    }
+    
+    .horizontal-scroll::-webkit-scrollbar {
+        display: none;
+      }
+     
+    .horizontal-scroll {
+        -ms-overflow-style: none;
+    }
+
+    .form {
+        width: 70%;
+        padding: 30px 45px 10px 45px;
+    }
+
+    .form-camps {
+        margin-bottom: 0px;
+    }
+
+    .section-contactar {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .info {
+        height: 80%;
+        width: 20%;
+        padding: 30px;
+        padding-bottom: 10px;
+        margin-top: 2%;
+    }
+
+    #section-image {
+        background-color: #AD822B;
+    }
+
+    .all-width-height {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .d-none {
+        display: none;
+    }
+
+    .collage {
+        display: flex;
+        align-items: flex-start;
+        width: 100vw;
+    }
+
+    .collage div {
+        width: 14.28%;
+        height: 25em;
+        margin: 0px 10px;
+        border: #3b83bd 5px solid;
+    }
+
+    .collage div:hover {
+        opacity: 0.6;
+    }
+
+    .collage div img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /*.card-front {
+        transform: perspective(600px) rotateX(0deg);
+    }
+
+    .card-back {
+        transform: perspective(600px) rotateX(-180deg);
+    }
+
+    .back-content ul {
+        display: flex;
+    }
+
+    .back-content li {
+        margin: auto 15px;
+    }
+
+    .sacramentos-card:hover > .card-front {
+        transform: perspective(600px) rotateX(180deg);
+    }
+    
+    .sacramentos-card:hover > .card-back {
+        transform: perspective(600px) rotateX(0deg);
+    }*/
+
+    footer {
+        padding: 1vh 0;
+    }
+
+    footer p {
+        font-size: 1.5em;
+    }
+
+    footer i img {
+        width: 3em;
+        height: 3em;
+    }
+
+    .no-padding {
+        padding: 0;
+    }
+
+    .no-margin {
+        margin: 0;
+    }
+
+    .d-section-cards-vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

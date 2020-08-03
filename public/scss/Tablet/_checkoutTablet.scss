@@ -1,0 +1,83 @@
+.page-checkout{
+    padding: 1em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    .direcciones{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      button{
+        position: relative;
+        border-radius: 5px;
+        height: 50px;
+        width: 90px;
+        padding: 5px;
+        margin: 0.5em;
+        border: none;
+        background-color: transparent;
+        color: $pageWhite;
+        background-color: $pageRed;
+        font-size: 0.7em;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+          background-color: $pageWhite;
+          box-shadow: 0px 0px 15px $pageBlack;
+          color: $pageRed;
+          transition: all 0.5s ease-in-out;
+        }
+      }//Button
+    }//Direcciones
+    .rules{
+      li{
+        font-style: italic;
+      }
+    }//rules
+    .total,.check-info{
+      padding: 1em !important;
+    }//total,Check-info
+  
+    .total{
+      position: sticky;
+      top: 10vh;
+      margin: 0px 0px 0px 6px;
+      text-align: center;
+      max-height: 40vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      h2{
+        font-size: 1em;
+      }
+      h3{
+        font-size: 1.3em;
+      }
+      p{
+        font-size: 0.8em;
+      }
+    }//total
+    .check-info{
+
+      .row{
+        margin: 1.5em;
+      }
+      input,select,textarea{
+        padding: 0.5em;
+        border-radius: 3px;
+      }//input,select,textarea
+      .payments{
+        width: 100%;
+        flex-direction: row;
+        justify-content: left;
+        button{
+          position: relative;
+          border-radius: 5px;
+          height: 140px;
+          width: 140px;
+          padding: 3px;
+          font-size: 5em;
+        }//Button
+      }//Payments
+    }//Check-Info
+  }//Page Checkout

@@ -1,0 +1,80 @@
+.signin{
+    top: 0px;
+    background-image: url("../imgs/signin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    position: fixed;
+    top: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: -9999999999999;
+  }
+.flex{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 2vh;
+  z-index: -1;
+  min-height: 110vh;
+  .form{
+    margin: 1em;
+    border-radius: 9px;
+    background-color: $pageRedDarker;
+    opacity: .9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90vw;
+    height: 150vw;
+    input{
+      border: none;
+      border-radius: 2px;
+      padding: 0.5em;
+      font-size: 0.85em;
+    }
+    p,label{
+      color: $pageWhite;
+    }
+    a{
+      font-size: 0.8em;
+      text-decoration: underline;
+    }
+    .bar{
+      background-color: $pageWhite;
+      height: 3px;
+    }
+    button{
+      font-size: 1em;
+      border: 2px solid $pageWhite;
+      border-radius: 5px;
+      @include  buttonHover($pageWhite, $pageRed);
+      a{
+        font-size: 1em;
+        text-decoration: none;
+        color: $pageRed;
+        &:hover{
+          color: $pageWhite;
+          transition: all 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+      }
+    }
+    .errors{
+      border-radius: 32px;
+      min-width: 100%;
+      padding: 1em;
+      background-color: $pageWhite;
+      li{
+        color: $pageRed;
+      }
+    }
+    h1, li{
+      color: $pageWhite;
+    }
+    h1{
+      font-size: 1.2em;
+    }
+  }
+}

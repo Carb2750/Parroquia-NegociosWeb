@@ -1,0 +1,20 @@
+.hero{
+    .ad{
+      position: absolute;
+      top: calc(80vh - 8em);
+      left: calc(38vw - 150px);
+      align-items: center;
+      align-content: center;
+      padding: 0.2em;
+      text-align: center;
+      h2{
+        font-size: 2.5em;
+        color: $pageWhite;
+      }
+      button{
+        margin: 0.5em;
+        padding: 0.5em;
+        font-size: 2.5em;
+      }
+    }
+}
