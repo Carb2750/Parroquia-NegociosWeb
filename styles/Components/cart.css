@@ -1,0 +1,18 @@
+.page-cart {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.page-cart .cart-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-cart .cart-list .items {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

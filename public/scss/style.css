@@ -133,7 +133,7 @@ body {
   display: table;
 }
 
-[class*=col-] {
+[class*="col-"] {
   padding: 30px;
 }
 
@@ -439,7 +439,8 @@ header nav .slide.show {
   padding: 0.5em;
   font-size: 0.85em;
 }
-.flex .form p, .flex .form label {
+.flex .form p,
+.flex .form label {
   color: #fff;
 }
 .flex .form a {
@@ -483,7 +484,8 @@ header nav .slide.show {
 .flex .form .errors li {
   color: #bf0000;
 }
-.flex .form h1, .flex .form li {
+.flex .form h1,
+.flex .form li {
   color: #fff;
 }
 .flex .form h1 {
@@ -498,7 +500,9 @@ header nav .slide.show {
 .page-table h1 {
   color: #fff;
 }
-.page-table .buscador form input, .page-table .buscador form button, .page-table .buscador form select {
+.page-table .buscador form input,
+.page-table .buscador form button,
+.page-table .buscador form select {
   padding: 0.2em !important;
 }
 .page-table .buscador form button {
@@ -626,7 +630,8 @@ header nav .slide.show {
   padding-top: 3.5em;
   padding: 0.7em;
 }
-.page-single h1, .page-single h2 {
+.page-single h1,
+.page-single h2 {
   color: #fff;
   font-size: 1.5em;
 }
@@ -648,7 +653,8 @@ header nav .slide.show {
 .page-single .single-form form .single-input label {
   color: #fff;
 }
-.page-single .single-form form .single-input input, .page-single .single-form form .single-input select {
+.page-single .single-form form .single-input input,
+.page-single .single-form form .single-input select {
   border: none;
   border-radius: 2px;
   padding: 0.3em !important;
@@ -778,7 +784,14 @@ header nav .slide.show {
   transform: rotate(0deg) scale(1);
   opacity: 1;
 }
-.page-store .products .items form .opciones label input:checked ~ .checkmark::after {
+.page-store
+  .products
+  .items
+  form
+  .opciones
+  label
+  input:checked
+  ~ .checkmark::after {
   transform: rotate(45deg) scale(1);
   opacity: 1;
   left: 7px;
@@ -975,7 +988,8 @@ header nav .slide.show {
 .page-checkout .rules li {
   font-style: italic;
 }
-.page-checkout .total, .page-checkout .check-info {
+.page-checkout .total,
+.page-checkout .check-info {
   border-radius: 15px;
   color: #fff;
   padding: 1em !important;
@@ -1006,7 +1020,9 @@ header nav .slide.show {
 .page-checkout .check-info .row {
   margin: 1.5em;
 }
-.page-checkout .check-info input, .page-checkout .check-info select, .page-checkout .check-info textarea {
+.page-checkout .check-info input,
+.page-checkout .check-info select,
+.page-checkout .check-info textarea {
   padding: 0.5em;
   border-radius: 3px;
   border: none;
@@ -1095,7 +1111,9 @@ header nav .slide.show {
 .page-directions .check-info .row {
   margin: 1.5em;
 }
-.page-directions .check-info input, .page-directions .check-info select, .page-directions .check-info textarea {
+.page-directions .check-info input,
+.page-directions .check-info select,
+.page-directions .check-info textarea {
   padding: 0.5em !important;
   border-radius: 3px;
   border: none;
@@ -1346,7 +1364,14 @@ header nav .slide.show {
     text-align: center;
     font-size: 10px;
   }
-  .page-store .products .items form .opciones label input:checked ~ .checkmark::after {
+  .page-store
+    .products
+    .items
+    form
+    .opciones
+    label
+    input:checked
+    ~ .checkmark::after {
     left: 4px;
     top: 1px;
     width: 3px;
@@ -1500,7 +1525,8 @@ header nav .slide.show {
   .page-checkout .rules li {
     font-style: italic;
   }
-  .page-checkout .total, .page-checkout .check-info {
+  .page-checkout .total,
+  .page-checkout .check-info {
     padding: 1em !important;
   }
   .page-checkout .total {
@@ -1525,7 +1551,9 @@ header nav .slide.show {
   .page-checkout .check-info .row {
     margin: 1.5em;
   }
-  .page-checkout .check-info input, .page-checkout .check-info select, .page-checkout .check-info textarea {
+  .page-checkout .check-info input,
+  .page-checkout .check-info select,
+  .page-checkout .check-info textarea {
     padding: 0.5em;
     border-radius: 3px;
   }
@@ -1568,7 +1596,9 @@ header nav .slide.show {
     padding: 1em;
   }
 
-  .page-table .buscador form input, .page-table .buscador form button, .page-table .buscador form select {
+  .page-table .buscador form input,
+  .page-table .buscador form button,
+  .page-table .buscador form select {
     padding: 0.7em !important;
   }
   .page-table .table table {
@@ -1601,7 +1631,9 @@ header nav .slide.show {
   .page-directions .check-info .row {
     margin: 1.5em;
   }
-  .page-directions .check-info input, .page-directions .check-info select, .page-directions .check-info textarea {
+  .page-directions .check-info input,
+  .page-directions .check-info select,
+  .page-directions .check-info textarea {
     padding: 0.5em !important;
     border-radius: 3px;
   }
@@ -1633,7 +1665,8 @@ header nav .slide.show {
     padding-top: 3.5em;
     padding: 3em;
   }
-  .page-single h1, .page-single h2 {
+  .page-single h1,
+  .page-single h2 {
     color: #fff;
     font-size: 1.5em;
   }
@@ -1651,7 +1684,8 @@ header nav .slide.show {
   .page-single .single-form form .single-input label {
     color: #fff;
   }
-  .page-single .single-form form .single-input input, .page-single .single-form form .single-input select {
+  .page-single .single-form form .single-input input,
+  .page-single .single-form form .single-input select {
     border: none;
     border-radius: 4px;
     padding: 0.5em !important;
@@ -1901,7 +1935,8 @@ header nav .slide.show {
   .flex .form .errors li {
     color: #bf0000;
   }
-  .flex .form h1, .flex .form li {
+  .flex .form h1,
+  .flex .form li {
     color: #fff;
   }
   .flex .form h1 {
@@ -1911,7 +1946,9 @@ header nav .slide.show {
   .page-table h1 {
     color: #fff;
   }
-  .page-table .buscador form input, .page-table .buscador form button, .page-table .buscador form select {
+  .page-table .buscador form input,
+  .page-table .buscador form button,
+  .page-table .buscador form select {
     padding: 0.5em !important;
   }
   .page-table .table table {
@@ -2013,7 +2050,14 @@ header nav .slide.show {
     transform: rotate(0deg) scale(1);
     opacity: 1;
   }
-  .page-store .products .items form .opciones label input:checked ~ .checkmark::after {
+  .page-store
+    .products
+    .items
+    form
+    .opciones
+    label
+    input:checked
+    ~ .checkmark::after {
     transform: rotate(45deg) scale(1);
     opacity: 1;
     left: 6px;
@@ -2100,7 +2144,8 @@ header nav .slide.show {
   .page-checkout .rules li {
     font-style: italic;
   }
-  .page-checkout .total, .page-checkout .check-info {
+  .page-checkout .total,
+  .page-checkout .check-info {
     padding: 1em !important;
   }
   .page-checkout .total {
@@ -2123,7 +2168,8 @@ header nav .slide.show {
   .page-checkout .check-info .row {
     margin: 1.5em;
   }
-  .page-checkout .check-info input, .page-checkout .check-info select {
+  .page-checkout .check-info input,
+  .page-checkout .check-info select {
     padding: 0.5em;
     border-radius: 3px;
     border: none;
@@ -2219,7 +2265,8 @@ header nav .slide.show {
     min-width: 100%;
     padding: 1em;
   }
-  .flex .form h1, .flex .form li {
+  .flex .form h1,
+  .flex .form li {
     color: #fff;
   }
   .flex .form h1 {
@@ -2321,7 +2368,14 @@ header nav .slide.show {
     transform: rotate(0deg) scale(1);
     opacity: 1;
   }
-  .page-store .products .items form .opciones label input:checked ~ .checkmark::after {
+  .page-store
+    .products
+    .items
+    form
+    .opciones
+    label
+    input:checked
+    ~ .checkmark::after {
     transform: rotate(45deg) scale(1);
     opacity: 1;
     left: 6.8px;
@@ -2532,7 +2586,14 @@ header nav .slide.show {
     transform: rotate(0deg) scale(1);
     opacity: 1;
   }
-  .page-store .products .items form .opciones label input:checked ~ .checkmark::after {
+  .page-store
+    .products
+    .items
+    form
+    .opciones
+    label
+    input:checked
+    ~ .checkmark::after {
     transform: rotate(45deg) scale(1);
     opacity: 1;
     left: 6.8px;

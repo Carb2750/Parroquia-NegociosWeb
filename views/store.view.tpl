@@ -2,7 +2,7 @@
 <div class="page-store">
     <div class="filter-options col-s-7 col-m-6 col-2 no-padding no-margin center">
         <form action="index.php?page={{page}}" method="post">
-                <legend>Menu</legend>
+                <legend>Categoría</legend>
                 <div class="line"></div>
                 <button class="left col-s-12 no-padding">&nbsp;{{check}} Todo</button>
                 {{foreach categories}}
@@ -21,7 +21,7 @@
         <div class="products">
             <div class="items col-s-12 col-m-8 col-6 col-l-6 center col-offset-m-2 col-offset-5 col-offset-l-5 no-padding">
                 {{foreach products}}
-                  <form id="formProducts"class="col-s-12 col-m-12 col-11 no-padding" action="index.php?page={{page}}" method="post">
+                  <form id="formProducts"class="col-s-12 col-m-12 col-11 no-padding product" action="index.php?page={{page}}" method="post">
                     <input type="hidden" name="prdCod" value="{{prdCod}}">
                       <div class="foto col-s-12 col-m-4 col-5 no-padding">
                         <h2 class="center">  {{prdDscES}} </h2>
@@ -30,7 +30,7 @@
                       <div class="line-red"></div>
                       
                       <div class="opciones">
-                          <h3>Platos</h3>
+                          <h3>Productos</h3>
                             <label>
                               <input name="radio"type="radio" value="{{prdCod}}" checked>{{prdQuantity}} {{prdDscES}} ${{prdPrice}}
                               <span class="checkmark"></span>
