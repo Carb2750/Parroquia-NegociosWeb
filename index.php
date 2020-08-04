@@ -107,175 +107,277 @@ case "start":
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
       die();
 case "storeL":
-    ($logged)?
-      include_once "controllers/store.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/store.control.php";
+    } else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
       die();
 case "cartL":
-    ($logged)?
-      include_once "controllers/cart.control.php":
+    if($logged) {
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/cart.control.php";
+    } else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
       die();
 case "Users":
-    ($logged)?
-      include_once "controllers/security/Users.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Users.control.php";
+    } else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "User":
-    ($logged)?
-      include_once "controllers/security/User.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/User.control.php";
+    } else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Roles":
-    ($logged)?
-      include_once "controllers/security/Roles.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Roles.control.php";
+    }else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Tipos":
-    ($logged)?
-      include_once "controllers/security/Tipos.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Tipos.control.php";
+    }else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Tipo":
-    ($logged)?
-      include_once "controllers/security/Tipo.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Tipo.control.php";
+    }else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Categorias":
-    ($logged)?
-      include_once "controllers/security/Categorias.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Categorias.control.php";
+    }else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Categoria":
-    ($logged)?
-      include_once "controllers/security/Categoria.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Categoria.control.php";
+    }else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Statuses":
-    ($logged)?
-      include_once "controllers/security/Statuses.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Statuses.control.php";
+    }else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Status":
-    ($logged)?
-      include_once "controllers/security/Status.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Status.control.php";
+    }else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Pago":
-    ($logged)?
-      include_once "controllers/security/Pago.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Pago.control.php";
+    }else{
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Pagos":
-    ($logged)?
-      include_once "controllers/security/Pagos.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Pagos.control.php";
+    }else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Modulos":
-    ($logged)?
-      include_once "controllers/security/Modulos.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Modulos.control.php";
+    }else{
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Modulo":
-    ($logged)?
-      include_once "controllers/security/Modulo.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Modulo.control.php";
+    }else{ 
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Accesos":
-    ($logged)?
-      include_once "controllers/security/Accesos.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Accesos.control.php";
+    }else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Acceso":
-    ($logged)?
-      include_once "controllers/security/Acceso.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Acceso.control.php";
+    }else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Productos":
-    ($logged)?
-      include_once "controllers/security/Productos.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Productos.control.php";
+    } else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Producto":
-    ($logged)?
-      include_once "controllers/security/Producto.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Producto.control.php";
+    }else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Entregas":
-    ($logged)?
-      include_once "controllers/security/Entregas.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Entregas.control.php";
+    }else{
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Entrega":
-    ($logged)?
-      include_once "controllers/security/Entrega.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Entrega.control.php";
+    }else{
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Variations":
-    ($logged)?
-      include_once "controllers/security/Variations.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Variations.control.php";
+    }else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Variation":
-    ($logged)?
-      include_once "controllers/security/Variation.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Variation.control.php";
+    }else{
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Manejos":
-    ($logged)?
-      include_once "controllers/security/Manejos.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Manejos.control.php";
+    }else{
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Manejo":
-    ($logged)?
-      include_once "controllers/security/Manejo.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Manejo.control.php";
+    }else{
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Ordenes":
-    ($logged)?
-      include_once "controllers/security/Ordenes.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Ordenes.control.php";
+    }else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Orden":
-    ($logged)?
-      include_once "controllers/security/Orden.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/security/Orden.control.php";
+    }else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
             
 case "Checkout":
-    ($logged)?
-      include_once "controllers/user/Checkout.control.php":
+    if($logged) {
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/user/Checkout.control.php";
+    } else {
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Historial":
-    ($logged)?
-      include_once "controllers/user/history.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/user/history.control.php";
+    }else{
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Config":
-    ($logged)?
-      include_once "controllers/user/user.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/user/user.control.php";
+    }else{
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Change":
-    ($logged)?
-      include_once "controllers/user/change.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/user/change.control.php";
+    }else{
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Directions":
-    ($logged)?
-      include_once "controllers/user/directions.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/user/directions.control.php";
+    }else{
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();        
 case "Approved":
-    ($logged)?
-      include_once "controllers/user/approved.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/user/approved.control.php";
+    }else{
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
 case "Canceled":
-    ($logged)?
-      include_once "controllers/user/canceled.control.php":
+    if($logged){
+      addToContext("layoutFile", "verified_layout2");
+      include_once "controllers/user/canceled.control.php";
+    }else{
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    }
     die();
                              
 }

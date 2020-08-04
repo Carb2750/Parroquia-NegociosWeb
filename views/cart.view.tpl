@@ -1,9 +1,9 @@
 <div class="page-cart">
-            <div class="cart-list">
+            <div class="cart-list col-s-12 col-m-9 no-padding">
                 {{if hasItems}}
                     {{foreach products}}
                     <div class="items"> 
-                            <img class="" src="{{prdImageURL}}" alt="">
+                            <img class="col-s-9 col-m-3 col-2 col-l-2 no-padding" src="{{prdImageURL}}" alt="">
                             <div class="info">
                                 <h2> {{prdDscES}} </h2>
                                 <form action="index.php?page={{page}}" method="post">
@@ -33,14 +33,14 @@
                 {{endifnot hasItems}}
             </div>
             {{if hasItems}}
-            <div class="subtotal no-padding">
+            <div class="subtotal co-s-12 col-m-4 col-3 no-padding">
                 <h2>Subtotal:   ${{subtotal}}</h2>
                 	&nbsp;
                 <div class="line-redDark"></div>
                 &nbsp;
                 <form action="index.php?page={{page}}" method="post">
                         <input type="hidden" name="btnPagar">
-                        <button class="no-padding" id="btnPagar">Pagar</button>
+                        <button class="col-s-8 col-m-8 col-5 no-padding" id="btnPagar">Pagar</button>
                 </form>
             </div>
             {{endif hasItems}}

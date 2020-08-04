@@ -8,15 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.css">
     <link rel="stylesheet" href="./styles/Components/Header.css">
     <link rel="stylesheet" href="./styles/Components/Footer.css">
-    <link rel="stylesheet" href="./styles/Components/Cards.css">
-    <link rel="stylesheet" href="./styles/Components/Carousel.css">
-    <link rel="stylesheet" href="./styles/Components/Buttons.css">
-    <link rel="stylesheet" href="./styles/Components/Frase.css">
     <link rel="stylesheet" href="./styles/Utils/Utils.css">
-    <link rel="stylesheet" href="./styles/Components/Clouds.css">
     <link rel="stylesheet" href="./styles/Utils/Responsive.css">
-    <link rel="stylesheet" href="./styles/Components/store.css">
-    <link rel="stylesheet" href="./styles/Components/cart.css">
+    <link rel="stylesheet" href="./styles/Components/layout.css">
     <script src="public/js/jquery.min.js"></script>
 </head>
 <body>
