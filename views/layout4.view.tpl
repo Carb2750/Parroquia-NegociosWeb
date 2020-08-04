@@ -32,14 +32,12 @@
             </ul>
         </nav>
     </header>
-    <div class="contenido">
-        {{{page_content}}}
-    </div>
+   
+    {{{page_content}}}
+ 
     <footer class="gray-color">
         <p>Tel: 999-999</p>
         <i><a href="#"><img src="./public/icons/facebook.svg" alt="Icono de facebook"></a></i>
     </footer>
 </body>
 </html>
-<script src="./public/js/misioneros.js"></script>
-<script src="./public/js/menuBtn.js"></script>
