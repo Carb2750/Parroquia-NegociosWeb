@@ -3,7 +3,7 @@
                 {{if hasItems}}
                     {{foreach products}}
                     <div class="items"> 
-                            <img class="col-s-9 col-m-3 col-2 col-l-2 no-padding" src="{{prdImageURL}}" alt="">
+                            <img class="cart-image no-padding" src="{{prdImageURL}}" alt="">
                             <div class="info">
                                 <h2> {{prdDscES}} </h2>
                                 <form action="index.php?page={{page}}" method="post">

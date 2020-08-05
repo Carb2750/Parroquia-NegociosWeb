@@ -25,7 +25,7 @@
                     <input type="hidden" name="prdCod" value="{{prdCod}}">
                       <div class="foto col-s-12 col-m-4 col-5 no-padding">
                         <h2 class="center">  {{prdDscES}} </h2>
-                        <img class="col-s-9 col-m-6 col-10 col-l-12 no-padding" src="{{prdImageURL}}" alt="">
+                        <img class="store-image col-s-9 col-m-6 col-10 col-l-12 no-padding" src="{{prdImageURL}}" alt="">
                       </div>
                       <div class="line-red"></div>
                       

@@ -1,7 +1,7 @@
 <div class="signin">
 
 </div>
-<div class="flex col-s-12 col-m-12 col-5 no-margin no-padding">
+<div class="container-signin flex col-s-12 col-m-12 col-5 no-margin no-padding">
   <form id="formLogin" action="index.php?page=login" method="POST" class="form col-m-6 col-12 no-margin">
     <h1>Iniciar Sesión</h1>
 

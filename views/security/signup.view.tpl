@@ -1,7 +1,7 @@
 <div class="signin">
 
 </div>
-<div class="flex col-s-12 col-m-12 col-2 no-margin no-padding">
+<div class="container-signin flex col-s-12 col-m-12 col-2 no-margin no-padding">
 <form id="formLogin" action="index.php?page=signup" method="POST" class="form col-12 no-margin">
     <br>
     <a href="index.php?page=login">Regresar</a>
