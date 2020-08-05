@@ -18,7 +18,7 @@
                     <th>Nombre Español</th>
                     <th>Nombre Ingles</th>
                     <th>Precio</th>
-                    <th>Porciones</th>
+                    <th>unidades</th>
                     <th>Categoria</th>
                     <th>Stock</th>
                     <th>Estado</th>

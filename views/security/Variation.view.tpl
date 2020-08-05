@@ -21,8 +21,8 @@
             </div>
             <div class="single-input row">
                 <br>
-                <label class="left" for="text">Porciones a Ofrecer</label><br>
-                <input class="col-s-12 col-m-11 col-12 no-padding" type="text" name="variationQuantity" id="variationQuantity" placeholder="Porciones" 
+                <label class="left" for="text">Unidades a Ofrecer</label><br>
+                <input class="col-s-12 col-m-11 col-12 no-padding" type="text" name="variationQuantity" id="variationQuantity" placeholder="Unidades" 
                     value="{{prdQuantity}}" {{readonly}}>
             </div>
             
