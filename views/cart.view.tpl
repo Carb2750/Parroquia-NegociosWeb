@@ -12,7 +12,6 @@
                                     <input type="hidden" name="prdQuantity" value="{{prdQuantity}}">
                                     <p>Cantidad: {{prdQuantity}}</p>
                                     <p>Precio: ${{prdPrice}}</p>
-                                    <p>*Incluye Papas Fritas</p>
                                     <p class="add"><button id="btnLess" name="btnLess" type="submit"><i class="fas fa-minus"></i></button>&nbsp;{{cartQuantity}}&nbsp;
                                     <button id="btnAdd" name="btnAdd" type="submit"><i class="fas fa-plus"></i></button></p>
                                     <p class="trash"><button id="btnTrash" name="btnTrash" type="submit"><i class="fas fa-trash-alt"></i></button></p>

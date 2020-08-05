@@ -15,7 +15,7 @@
             <div class="single-input row">
                 <br>
                 <label class="left" for="prdImageURL">Imagen de Producto</label><br>
-                <img class="col-s-8 no-padding no-margin" src="{{prdImageURL}}" alt="Foto Comida">
+                <img class="col-s-8 no-padding no-margin" src="{{prdImageURL}}" alt="Foto Producto">
                 
                 <input class="col-s-12 col-m-11 col-12 no-padding" type="file" name="prdImageURL" id="prdImageURL" 
                     placeholder="Codigo de Producto" value="{{prdImageURL}}" {{readonly}}>
@@ -41,9 +41,9 @@
             </div>
             <div class="single-input row">
                 <br>
-                <label class="left" for="prdPrice">Porciones Ofrecidas del Producto</label><br>
+                <label class="left" for="prdPrice">Unidades en Venta</label><br>
                 <input class="col-s-12 col-m-11 col-12 no-padding" type="text" name="prdQuantity" id="prdQuantity" 
-                    placeholder="Porciones del Producto" value="{{prdQuantity}}" {{prdQuantity}} {{readonly}}>
+                    placeholder="Unidades del Producto" value="{{prdQuantity}}" {{prdQuantity}} {{readonly}}>
             </div>
             <div class="single-input row">
                 <br>
