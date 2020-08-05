@@ -45,7 +45,7 @@
                       </div>
                       <div class="line-red"></div>
                       <div class="opciones">
-                          <button name="btnCart" id="btnCart" type="submit">+&nbsp;<i class="fas fa-utensils"></i>&nbsp;</button>
+                          <button name="btnCart" id="btnCart" type="submit">+&nbsp;<i class="fas fa-cart-plus"></i>&nbsp;</button>
                           <button name="btnCheckout" id="btnCheckout" type="submit">Ordenar Ahora</button>
                       </div>    
                   </form>

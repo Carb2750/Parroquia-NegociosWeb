@@ -32,7 +32,7 @@
                 <li><a href="index.php?page=misioneros" class="nav-links">Misioneros</a></li>
                 <li><a href="index.php?page=contactanos" class="nav-links">Contactanos</a></li>
                 <li><a href="index.php?page=storeL" class="nav-links">Catalogo</a></li>
-                <li><a class="hover nav-links" href="index.php?page=cartL"><i class="fas fa-utensils"></i>&nbsp; {{cartItems}}</a></li>
+                <li><a class="hover nav-links" href="index.php?page=cartL"><i class="fas fa-cart-plus"></i>&nbsp; {{cartItems}}</a></li>
                 <li id="btn-menusito" class="button-1"><a href="#" class="nav-links"><i class="fas fa-cog"></i></a></li>
             </ul>
             <ul id="menusito" class="slide center no-padding">
