@@ -28,7 +28,12 @@ if (isset($_GET["page"])) {
 require_once "controllers/mw/verificar.mw.php";
 require_once "controllers/mw/site.mw.php";
 
-
+$logged = mw_estaLogueado();
+if ($logged) {
+    addToContext("layoutFile", "verified_layout");
+    include_once 'controllers/mw/autorizar.mw.php';
+    generarMenu($_SESSION["userEmail"]);
+}
 //Este switch se encarga de todo el enrutamiento público
 switch ($pageRequest) {
 case "home":
@@ -56,31 +61,79 @@ case "logout":
     include_once "controllers/security/logout.control.php";
     die();
 case "pastoraljuvenil":
-    include_once "controllers/pages/pastoraljuvenil.control.php";
+        if($logged) {
+      addToContext("layoutFile", "verified_layout3");
+      renderizar("pages/pastoraljuvenil", array(), "../views/verified_layout3.view.tpl");
+    } else {
+      renderizar("pages/pastoraljuvenil", array(), "../views/layout2.view.tpl");
+    }
     die();
 case "acolitos":
-    include_once "controllers/pages/acolitos.control.php";
+    if($logged) {
+      addToContext("layoutFile", "verified_layout3");
+      renderizar("pages/acolitos", array(), "../views/verified_layout3.view.tpl");
+    } else {
+      renderizar("pages/acolitos", array(), "../views/layout2.view.tpl");
+    }
     die();
 case "comunidades":
-    include_once "controllers/pages/comunidades.control.php";
+      if($logged) {
+      addToContext("layoutFile", "verified_layout3");
+      renderizar("pages/comunidades", array(), "../views/verified_layout3.view.tpl");
+    } else {
+      renderizar("pages/comunidades", array(), "../views/layout2.view.tpl");
+    }
     die();
 case "pastoralinfantil":
-    include_once "controllers/pages/pastoralinfantil.control.php";
+    if($logged) {
+      addToContext("layoutFile", "verified_layout3");
+      renderizar("pages/pastoralinfantil", array(), "../views/verified_layout3.view.tpl");
+    } else {
+      renderizar("pages/pastoralinfantil", array(), "../views/layout2.view.tpl");
+    }
     die();
 case "sacramentos":
-    include_once "controllers/pages/sacramentos.control.php";
+  if($logged) {
+    addToContext("layoutFile", "verified_layout3");
+    renderizar("pages/sacramentos", array(), "../views/verified_layout3.view.tpl");
+  } else {
+    renderizar("pages/sacramentos", array(), "../views/layout2.view.tpl");
+  }
     die();
 case "eventos":
-    include_once "controllers/pages/eventos.control.php";
+  if($logged) {
+    addToContext("layoutFile", "verified_layout3");
+    renderizar("pages/eventos", array(), "../views/verified_layout3.view.tpl");
+  } else {
+    renderizar("pages/eventos", array(), "../views/layout2.view.tpl");
+  }
     die();
 case "horarios":
-    include_once "controllers/pages/horarios.control.php";
+  if($logged) {
+    addToContext("layoutFile", "verified_layout3");
+    renderizar("pages/horarios", array(), "../views/verified_layout3.view.tpl");
+  } else {
+    renderizar("pages/horarios", array(), "../views/layout2.view.tpl");
+  }
+    // include_once "controllers/pages/horarios.control.php";
     die();
 case "contactanos":
-    include_once "controllers/pages/contactanos.control.php";
+  if($logged) {
+    addToContext("layoutFile", "verified_layout3");
+    renderizar("pages/contactanos", array(), "../views/verified_layout3.view.tpl");
+  }
+  else {
+    renderizar("pages/contactanos", array(), "../views/layout4.view.tpl");
+  }
     die();
 case "misioneros":
-    include_once "controllers/pages/misioneros.control.php";
+    if($logged) {
+      addToContext("layoutFile", "verified_layout3");
+      renderizar("pages/misioneros", array(), "../views/verified_layout3.view.tpl");
+    }
+    else {
+      renderizar("pages/misioneros", array(), "../views/layout4.view.tpl");
+    }
     die();
 }
 
