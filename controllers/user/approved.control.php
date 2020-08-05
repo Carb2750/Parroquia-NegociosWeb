@@ -74,17 +74,17 @@
             <meta charset="UTF-8">
             <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Food Service</title>
+            <title>Parroquia</title>
             <style>
                 * {
                 font-family: "Poppins", sans-serif;
                 }
                 .mail {
-                background-color: #d80000;
+                background-color: #efefef;
                 padding: 1em;
                 }
                 .action-title {
-                background-color: #7a0202;
+                background-color: #AD822B;
                 padding: 0.5em;
                 margin: 1em 0px;
                 border-radius: 9px;
@@ -92,7 +92,7 @@
                 .action-title h1 {
                 text-align: center;
                 opacity: 1;
-                color: #fff;
+                color: #000;
                 font-size: 2em !important;
                 }
     
@@ -100,9 +100,9 @@
                 border-radius: 9px;
                 text-align: center;
                 margin: 0em;
-                background-color: #7a0202;
+                background-color: #AD822B;
                 padding: 1em;
-                color: #fff;
+                color: #000;
                 }
                 .content h2 {
                 background-color: transparent;
@@ -112,7 +112,7 @@
                 padding: 1em;
                 border-radius: 9px;
                 list-style: none;
-                background-color: #d80000;
+                background-color: #efefef;
                 }
                 .content .receipt li {
                 text-align: left;
@@ -142,7 +142,7 @@
         <body>
             <div class="mail">
                 <div class="action-title">
-                    <h1>Food Service HN</h1>
+                    <h1>Parroquia San Juan Bautista</h1>
                 </div>
                 <div class="content">
                     <h2>Compra Realizada</h2>

@@ -58,7 +58,7 @@ function sendemail($to, $subjet, $message)
         $mail->Port = $smtpPort;                                    // TCP port to connect to
 
         //Recipients
-        $mail->setFrom('noreply@foodservice.hn', 'Food Service Hn');
+        $mail->setFrom('noreply@foodservice.hn', 'Parroquia San Juan Bautista');
         // $mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
         $mail->addAddress($to);               // Name is optional
         // $mail->addReplyTo('info@example.com', 'Information');
