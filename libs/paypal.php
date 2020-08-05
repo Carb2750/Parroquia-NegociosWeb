@@ -38,7 +38,7 @@ function createPaypalTransacction($products, $subtotal,$shipping,$total)
 
     $transaction = new \PayPal\Api\Transaction();
     $transaction->setAmount($amount);
-    $transaction->setNoteToPayee("Venta de comida de la empresa foodService");
+    $transaction->setNoteToPayee("Venta de productos por parte de la Parroquia San Juan Bautista");
     $transaction->setItemList($items);
 
     $redirectUrls = new \PayPal\Api\RedirectUrls();
