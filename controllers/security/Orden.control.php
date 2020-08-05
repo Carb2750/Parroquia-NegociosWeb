@@ -56,7 +56,7 @@ require_once "libs/sendmail.php";
                 <meta charset="UTF-8">
                 <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Food Service</title>
+                <title>Parroquia San Juan Bautista</title>
                 <style>
                     * {
                     font-family: "Poppins", sans-serif;
