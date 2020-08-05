@@ -63,12 +63,12 @@ require_once "libs/sendmail.php";
                     }
         
                     .mail {
-                    background-color: #d80000;
+                    background-color: #efefef;
                     padding: 1em;
                     }
         
                     .action-title {
-                    background-color: #7a0202;
+                    background-color: #AD822B;
                     padding: 0.5em;
                     margin: 1em 0px;
                     border-radius: 9px;
@@ -77,7 +77,7 @@ require_once "libs/sendmail.php";
                     .action-title h1 {
                     text-align: center;
                     opacity: 1;
-                    color: #fff;
+                    color: #000;
                     font-size: 2em !important;
                     }
         
@@ -85,9 +85,9 @@ require_once "libs/sendmail.php";
                     border-radius: 9px;
                     text-align: center;
                     margin: 0em;
-                    background-color: #7a0202;
+                    background-color: #AD822B;
                     padding: 1em;
-                    color: #fff;
+                    color: #000;
                     }
         
                     .content h2 {
@@ -97,7 +97,7 @@ require_once "libs/sendmail.php";
                     .content .messages{
                         padding: 1.5em;
                         border-radius: 9px;
-                        background-color: #d80000;
+                        background-color: #efefef;
                     }
                     .content .messages li {
                         list-style: none;
@@ -106,7 +106,7 @@ require_once "libs/sendmail.php";
                     }
                     .thanks{
                         text-align: center;
-                        color: #fff;
+                        color: #000;
                         font-size: 1.2em;
                         list-style: none;
                     }
@@ -122,7 +122,7 @@ require_once "libs/sendmail.php";
                         padding: 2em;
                         border-radius: 9px;
                         font-size: 1.5em;
-                        background-color: #d80000;
+                        background-color: #efefef;
                     }
                     }
         
@@ -131,7 +131,7 @@ require_once "libs/sendmail.php";
             <body>
                 <div class="mail">
                     <div class="action-title">
-                        <h1>Food Service HN</h1>
+                        <h1>Parroquia San Juan Bautista</h1>
                     </div>
                     <div class="content">
                         <ul class="messages">';
