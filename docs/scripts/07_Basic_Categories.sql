@@ -1,3 +1,4 @@
-INSERT INTO `foodservice`.`category` (`catDscES`, `catDscEN`, `catState`) VALUES ('Alitas de Pollo', 'Chicken Wings', 'ACT');
-INSERT INTO `foodservice`.`category` (`catDscES`, `catDscEN`, `catState`) VALUES ('Chuletas', 'Chops', 'ACT');
-INSERT INTO `foodservice`.`category` (`catDscES`, `catDscEN`, `catState`) VALUES ('Asados', 'Grilled Meat', 'ACT');
+INSERT INTO `psjb_db`.`category` (`catDscES`, `catDscEN`, `catState`) VALUES ('Accesorios', 'Accesories', 'ACT');
+INSERT INTO `psjb_db`.`category` (`catDscES`, `catDscEN`, `catState`) VALUES ('Camisas', 'T-Shirt', 'ACT');
+INSERT INTO `psjb_db`.`category` (`catDscES`, `catDscEN`, `catState`) VALUES ('Libros', 'Books', 'ACT');
+INSERT INTO `psjb_db`.`category` (`catDscES`, `catDscEN`, `catState`) VALUES ('FIDES', 'FIDES', 'ACT');
