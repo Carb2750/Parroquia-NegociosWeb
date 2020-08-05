@@ -1,8 +1,8 @@
 <?php
 $server = "127.0.0.1";
-$user = "kevbs";
-$pswd = "f33d3rS1nM4n0s";
-$database = "foodservice";
+$user = "admin_psjb";
+$pswd = "FX14C1AS3W3B";
+$database = "psjb_db";
 $port = "3306";
 
 $emailHost = 'smtp.gmail.com';
@@ -16,4 +16,3 @@ if (isset($_SERVER["SERVER_MVC"])) {
 }
 
 ?>
-    

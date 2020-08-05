@@ -1,2 +1,2 @@
-CREATE USER 'kevbs'@'%' IDENTIFIED WITH mysql_native_password BY 'f33d3rS1nM4n0s';
-GRANT ALL ON foodService.* TO 'kevbs'@'%';
+CREATE USER 'admin_psjb'@'%' IDENTIFIED WITH mysql_native_password BY 'FX14C1AS3W3B';
+GRANT ALL ON psjb_db.* TO 'admin_psjb'@'%';
