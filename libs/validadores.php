@@ -19,7 +19,7 @@
     return preg_match("/^[a-zA-Z 'áéíóúüÁÉÍÓÚÜÑñ\-&:]*$/",$value);
   }
   function validPhone($value){
-    return preg_match("/^[1-9][0-9]{3}[-][0-9]{4}$/",$value);
+    return preg_match("/^[1-9][0-9]{7}$/",$value);
   }
   function validDirection($value){
     return preg_match("/^[a-zA-Z áéíóúüÁÉÍÓÚÜÑñ0-9\-\W]{20,}$/",$value);
