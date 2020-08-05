@@ -49,7 +49,7 @@
                     <div class="row">
                         <label for="orderCell">Número Telefónico:</label>&nbsp;<br>
                         <input class="{{cErr}}" type="text" name="orderCell" id="orderCell" {{if userCell}}value="{{userCell}}"{{endif userCell}} {{if cellErr}}placeholder="{{cellErr}}"{{endif cellErr}}
-                        placeholder="Ej. 9875-6543" required>
+                        placeholder="Ej. 98756543" required>
                     </div>
                     
                     <div class="row">
