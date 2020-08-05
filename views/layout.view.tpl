@@ -1,48 +1,45 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <title>{{page_title}}</title>
-            <meta charset="utf-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1"/>
-            <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.css">
-            <link rel="stylesheet" href="public/scss/style.css">
-            <script src="public/js/jquery.min.js"></script>
-        </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parroquia</title>
+    <!--<link rel="stylesheet" href="./styles.css">-->
+    <link rel="stylesheet" href="./styles/Components/Header.css">
+    <link rel="stylesheet" href="./styles/Components/Footer.css">
+    <link rel="stylesheet" href="./styles/Components/layout.css">
+    <link rel="stylesheet" href="./styles/Utils/Utils.css">
+    <link rel="stylesheet" href="./styles/Utils/Responsive.css">
+</head>
 <body>
-     <header>
-        <nav id="menu-barra" class=" ">
-            <div class="title col-s-7 col-m-5 col-12 no-margin no-padding">
-                <a href="index.php?page=home">
-                    <p><img src="public/imgs/logo.png" alt="">&nbsp;Parroquia San Juan Bautista</p>
-                </a>
+    <header class="gray-color">
+        <nav>
+            <div class="hamburguer-button">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
-            <div class="burger" id="hmb">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>     
-            <ul class="col-s-12 col-m-7 col-12 col-l-7 nav-links no-margin center">
-                <li><a href="index.php?page=misioneros" class="hover">Misioneros</a></li>
-                <li><a href="index.php?page=contactanos" class="hover">Contactanos</a></li>
-                <li><a class="hover" href="index.php?page=store">Catalogo</a></li>
-                <li><a class="hover" href="index.php?page=cart"><i class="fas fa-utensils"></i>&nbsp; {{cartItems}}</a></li>
-                <li class="button-1" style="font-size:small;"><a href="index.php?page=login">Registrate</a></li>
+            <ul class="top-zindex">
+                <li><a href="index.php?page=home"><h1>Parroquía San Juan Bautista</h1></a></li>
+            </ul>
+            <ul class="nav-container-links gray-color">
+                <li><a href="index.php?page=misioneros" class="nav-links">Misioneros</a></li>
+                <li><a href="index.php?page=contactanos" class="nav-links">Contactanos</a></li>
+                <li><a href="index.php?page=login" class="nav-links">Iniciar Sesión</a></li>
             </ul>
         </nav>
     </header>
-            <div class="contenido">
-                {{{page_content}}}
-            </div>
 
-            <!--<div class="footer" class="gray-color">
-                <p>Tel: 999-999</p>
-                <i><a href="#"><img src="./icons/facebook.svg" alt="Icono de facebook"></a></i>
-            </div>-->
-            {{foreach js_ref}}
+        {{{page_content}}}
+
+    <footer class="gray-color">
+        <p>Tel: 999-999</p>
+        <i><a href="#"><img src="./public/icons/facebook.svg" alt="Icono de facebook"></a></i>
+    </footer>
+        {{foreach js_ref}}
                 <script src="{{uri}}"></script>
             {{endfor js_ref}}
     
-    <script src="public/js/hmb.js"></script>        
+    <script src="public/js/hmb.js"></script> 
 </body>
 </html>

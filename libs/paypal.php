@@ -44,8 +44,8 @@ function createPaypalTransacction($products, $subtotal,$shipping,$total)
     $redirectUrls = new \PayPal\Api\RedirectUrls();
 
     $redirectUrls
-        ->setReturnUrl("http://localhost/NegociosWeb/Proyecto/index.php?page=Approved") //URL aprovado
-        ->setCancelUrl("http://localhost/NegociosWeb/Proyecto/index.php?page=Canceled"); //URL cancelado
+        ->setReturnUrl("http://localhost/NegociosWeb/Parroquia-NegociosWeb/index.php?page=Approved") //URL aprovado
+        ->setCancelUrl("http://localhost/NegociosWeb/Parroquia-NegociosWeb/index.php?page=Canceled"); //URL cancelado
 
     $payment = new \PayPal\Api\Payment();
     $payment->setIntent('sale')

@@ -1,6 +1,7 @@
 $primary-color: #efefef;
 $secondary-color: #efefef;
 $third-color: #e2e2e2;
+$fourth-color: #AD822B;
 
 .slide {
   overflow-y: scroll;
@@ -42,13 +43,13 @@ $third-color: #e2e2e2;
   &:hover {
     cursor: pointer;
     background-color: #000;
-    box-shadow: 0px 0px 15px #1d1d1d81;
+    box-shadow: 0px 0px 15px $fourth-color;
     color: $primary-color;
     transition: all 0.5s ease-in-out;
   }
 }
 .action-title {
-  background-color: #1d1d1d81;
+  background-color: $fourth-color;
   opacity: 0.9;
   box-shadow: 0px 7px 15px #2e2e2e;
   h1 {
@@ -209,7 +210,7 @@ $third-color: #e2e2e2;
       &:hover {
         cursor: pointer;
         background-color: #000;
-        box-shadow: 0px 0px 15px #1d1d1d81;
+        box-shadow: 0px 0px 15px $fourth-color;
         color: $primary-color;
         transition: all 0.5s ease-in-out;
       }
@@ -218,7 +219,7 @@ $third-color: #e2e2e2;
 }
 .signin {
   top: 0px;
-  background-image: url("../imgs/signin.jpg");
+  background-image: url("../../public/imgs/signin.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -269,21 +270,21 @@ $third-color: #e2e2e2;
     }
     button {
       font-size: 1em;
-      border: 2px solid #fff;
+      border: 2px solid #000;
       border-radius: 5px;
-      background-color: #000;
-      color: $primary-color;
+      background-color: #fff;
+      color: #000;
       transition: all 0.5s ease-in-out;
       &:hover {
         cursor: pointer;
-        box-shadow: 0px 0px 15px #1d1d1d81;
+        box-shadow: 0px 0px 15px $fourth-color;
         color: #000;
         transition: all 0.5s ease-in-out;
       }
       a {
         font-size: 1em;
         text-decoration: none;
-        color: $primary-color;
+        color: #000;
         &:hover {
           color: #000;
           transition: all 0.3s ease-in-out, left 0.3s ease-in-out;
@@ -348,7 +349,7 @@ $third-color: #e2e2e2;
       thead {
         border: 10px solid $primary-color;
         border-radius: 15px;
-        background-color: #1d1d1d81;
+        background-color: $fourth-color;
         color: #000;
         th {
           text-align: center;
@@ -360,7 +361,7 @@ $third-color: #e2e2e2;
         border: 10px solid $primary-color;
         tr {
           height: 7vh;
-          background-color: #1d1d1d81;
+          background-color: $fourth-color;
           td {
             width: 20%;
             padding: 0.4em;
@@ -402,7 +403,7 @@ $third-color: #e2e2e2;
           position: relative;
           font-size: 12px !important;
           pointer-events: none;
-          background-color: #000;
+          background-color: $primary-color;
           .data {
             padding: 1em;
             font-family: "Inconsolata", monospace;
@@ -428,17 +429,21 @@ $third-color: #e2e2e2;
       display: flex;
       flex-direction: row;
       justify-content: center;
+      list-style: none;
       li {
         text-align: center;
         width: 30px;
         a {
+          color: #000;
           border-radius: 3px;
+          text-decoration: none;
           &:hover {
-            background-color: $third-color;
+            background-color: #f7e3ab;
+            color: #000;
           }
         }
         .selected {
-          background-color: #ffefef;
+          background-color: #AD822B;
           color: #000;
         }
       }
@@ -462,7 +467,7 @@ $third-color: #e2e2e2;
     justify-content: center;
     form {
       margin-top: 2em;
-      background-color: #1d1d1d81;
+      background-color: $fourth-color;
       opacity: 0.9;
       box-shadow: 0px 7px 20px #2e2e2e;
       border-radius: 9px;
@@ -503,7 +508,7 @@ $third-color: #e2e2e2;
     z-index: 11;
     bottom: 4vh;
     left: 5vw;
-    background-color: #1d1d1d81;
+    background-color: $fourth-color;
     height: 50px;
     width: 50px;
     border-radius: 999px;
@@ -536,7 +541,7 @@ $third-color: #e2e2e2;
     left: 0px;
     height: 100vh;
     color: #000;
-    background-color: #1d1d1d81;
+    background-color: $fourth-color;
     opacity: 0.9;
     transition: transform 0.7s ease-in;
     legend {
@@ -668,7 +673,7 @@ $third-color: #e2e2e2;
           transition: all 0.5s ease-in-out;
           &:hover {
             background-color: #000;
-            box-shadow: 0px 0px 8px #1d1d1d81;
+            box-shadow: 0px 0px 8px $fourth-color;
             color: $primary-color;
             transition: all 0.5s ease-in-out;
           }
@@ -703,7 +708,7 @@ $third-color: #e2e2e2;
           &:hover {
             cursor: pointer;
             background-color: #000;
-            box-shadow: 0px 0px 15px #1d1d1d81;
+            box-shadow: 0px 0px 15px $fourth-color;
             color: $primary-color;
             transition: all 0.5s ease-in-out;
           }
@@ -724,7 +729,7 @@ $third-color: #e2e2e2;
             &:hover {
               cursor: pointer;
               background-color: #000;
-              box-shadow: 0px 0px 15px #1d1d1d81;
+              box-shadow: 0px 0px 15px $fourth-color;
               color: $primary-color;
               transition: all 0.5s ease-in-out;
             }
@@ -759,7 +764,7 @@ $third-color: #e2e2e2;
       &:hover {
         cursor: pointer;
         background-color: #000;
-        box-shadow: 0px 0px 15px #1d1d1d81;
+        box-shadow: 0px 0px 15px $fourth-color;
         color: $primary-color;
         transition: all 0.5s ease-in-out;
       }
@@ -783,13 +788,13 @@ $third-color: #e2e2e2;
       padding: 5px;
       margin: 0.5em;
       border: none;
-      background-color: transparent;
+      background-color: #fff;
       color: #000;
       font-size: 0.8em;
       transition: all 0.5s ease-in-out;
       &:hover {
         background-color: #000;
-        box-shadow: 0px 0px 15px #1d1d1d81;
+        box-shadow: 0px 0px 15px $fourth-color;
         color: $primary-color;
         transition: all 0.5s ease-in-out;
       }
@@ -878,7 +883,7 @@ $third-color: #e2e2e2;
         transition: all 0.5s ease-in-out;
         &:hover {
           background-color: #000;
-          box-shadow: 0px 0px 15px #1d1d1d81;
+          box-shadow: 0px 0px 15px $fourth-color;
           color: $primary-color;
           transition: all 0.5s ease-in-out;
         }
@@ -902,14 +907,14 @@ $third-color: #e2e2e2;
       padding: 5px;
       margin: 0.5em;
       border: none;
-      background-color: transparent;
+      background-color: #ffffff;
       color: #000;
       transition: all 0.5s ease-in-out;
       font-size: 0.8em;
       &:hover {
         cursor: pointer;
-        background-color: #000;
-        box-shadow: 0px 0px 15px #1d1d1d81;
+        background-color: #000000;
+        box-shadow: px 0px 15px $fourth-color;
         color: $primary-color;
         transition: all 0.5s ease-in-out;
       }
@@ -919,7 +924,7 @@ $third-color: #e2e2e2;
     border-radius: 15px;
     color: #000;
     padding: 1em !important;
-    background-color: #1d1d1d81;
+    background-color: $fourth-color;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1128,7 +1133,7 @@ $third-color: #e2e2e2;
             margin: 0.5em;
             width: 70%;
             &:hover {
-              box-shadow: 0px 0px 4px #1d1d1d81;
+              box-shadow: 0px 0px 4px $fourth-color;
             }
           }
         }
@@ -1221,13 +1226,13 @@ $third-color: #e2e2e2;
         padding: 5px;
         margin: 0.5em;
         border: none;
-        background-color: transparent;
+        background-color: #fff;
         color: #000;
         font-size: 0.7em;
         transition: all 0.5s ease-in-out;
         &:hover {
           background-color: #000;
-          box-shadow: 0px 0px 15px #1d1d1d81;
+          box-shadow: 0px 0px 15px $fourth-color;
           color: $primary-color;
           transition: all 0.5s ease-in-out;
         }
@@ -1416,7 +1421,7 @@ $third-color: #e2e2e2;
     .single-form {
       form {
         margin-top: 2em;
-        background-color: #1d1d1d81;
+        background-color: $fourth-color;
         opacity: 0.9;
         box-shadow: 0px 7px 20px #2e2e2e;
         border-radius: 9px;
@@ -1833,13 +1838,13 @@ $third-color: #e2e2e2;
         padding: 5px;
         margin: 0.5em;
         border: none;
-        background-color: transparent;
+        background-color: #fff;
         color: #000;
         font-size: 1em;
         transition: all 0.5s ease-in-out;
         &:hover {
           background-color: #000;
-          box-shadow: 0px 0px 15px #1d1d1d81;
+          box-shadow: 0px 0px 15px $fourth-color;
           color: $primary-color;
           transition: all 0.5s ease-in-out;
         }

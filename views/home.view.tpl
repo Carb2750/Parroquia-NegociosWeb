@@ -19,7 +19,7 @@
             <h2>Bienvenido a nuestra Familia</h2>
             <div class="formar-parte">
                 <h3>¿Deseas formar parte?</h3>
-                <a href="index.php?page=login">
+                <a href="index.php?page=signup">
                     <button class="dorado-color">¡Unetenos!</button>
                 </a>
             </div>
