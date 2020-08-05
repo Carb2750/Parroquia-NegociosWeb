@@ -3,7 +3,7 @@
 </div>
 <div class="flex col-s-12 col-m-12 col-5 no-margin no-padding">
   <form id="formLogin" action="index.php?page=login" method="POST" class="form col-m-6 col-12 no-margin">
-    <h1>Inicia Sesión</h1>
+    <h1>Iniciar Sesión</h1>
 
   <div class="bar col-s-12 col-m-12 col-12 no-padding"> </div>
 
@@ -16,7 +16,7 @@
      </div>
 
      <div class="single-input row col-s-12 no-padding col-offset-m-5 col-offset-1">
-       <label class="left" for="">Contraseña <a href="index.php?page=forgot">¿Olvidaste tu Contraseña?</a></label><br>
+       <label class="left" for="">Contraseña<br><a href="index.php?page=forgot">¿Olvidaste tu Contraseña?</a></label><br>
        <input class="col-s-12 col-m-7 col-11" type="password" name="txtPswd" id="txtPswd" value="" placeholder="8 Caracteres o más" required/>
      </div>
       <button class="button-3 col-s-12 col-m-4 col-7 no-padding" id="btnSend"><span class="ion-log-in"></span>&nbsp;Iniciar Sesión</button>

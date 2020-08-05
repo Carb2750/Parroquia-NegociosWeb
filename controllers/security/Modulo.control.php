@@ -84,7 +84,7 @@ require_once 'models/security/state.model.php';
         $modules = array();
         $modules = getModulesByCode($_GET["cod"]);
         mergeFullArrayTo($modules, $viewData);
-        echo '<pre>'.print_r($modules).'</pre>';
+        //echo '<pre>'.print_r($modules).'</pre>';
     }
     if(isset($viewData["mdlState"])){
         $viewData["states"] = addSelectedCmbArray($viewData["states"],'stateCod',$viewData["mdlState"]);

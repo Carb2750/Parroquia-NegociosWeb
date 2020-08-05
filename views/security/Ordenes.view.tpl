@@ -28,7 +28,7 @@
             <ul>
                 {{if show}}
                     {{foreach pagination}}
-                        <li><a href="index.php?page=Ordenes&n={{cod}}" class="{{selected}}">{{cod}}</a></li>
+                        <li><a href="index.php?page=Ordenes&n={{cod}}"  class="{{selected}}">{{cod}}</a></li>
                     {{endfor pagination}}
                 {{endif show}}
                 {{if recentCMB}}

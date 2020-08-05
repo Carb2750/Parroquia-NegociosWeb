@@ -44,13 +44,13 @@
 .button-3:hover {
   cursor: pointer;
   background-color: #000;
-  box-shadow: 0px 0px 15px #1d1d1d81;
+  box-shadow: 0px 0px 15px #AD822B;
   color: #efefef;
   transition: all 0.5s ease-in-out;
 }
 
 .action-title {
-  background-color: #1d1d1d81;
+  background-color: #AD822B;
   opacity: 0.9;
   box-shadow: 0px 7px 15px #2e2e2e;
 }
@@ -252,14 +252,14 @@
 .hero .ad button:hover {
   cursor: pointer;
   background-color: #000;
-  box-shadow: 0px 0px 15px #1d1d1d81;
+  box-shadow: 0px 0px 15px #AD822B;
   color: #efefef;
   transition: all 0.5s ease-in-out;
 }
 
 .signin {
   top: 0px;
-  background-image: url("../imgs/signin.jpg");
+  background-image: url("../../public/imgs/signin.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -313,22 +313,22 @@
 }
 .flex .form button {
   font-size: 1em;
-  border: 2px solid #fff;
+  border: 2px solid #000;
   border-radius: 5px;
-  background-color: #000;
-  color: #efefef;
+  background-color: #fff;
+  color: #000;
   transition: all 0.5s ease-in-out;
 }
 .flex .form button:hover {
   cursor: pointer;
-  box-shadow: 0px 0px 15px #1d1d1d81;
+  box-shadow: 0px 0px 15px #AD822B;
   color: #000;
   transition: all 0.5s ease-in-out;
 }
 .flex .form button a {
   font-size: 1em;
   text-decoration: none;
-  color: #efefef;
+  color: #000;
 }
 .flex .form button a:hover {
   color: #000;
@@ -390,7 +390,7 @@
 .page-table .table table thead {
   border: 10px solid #efefef;
   border-radius: 15px;
-  background-color: #1d1d1d81;
+  background-color: #AD822B;
   color: #000;
 }
 .page-table .table table thead th {
@@ -403,7 +403,7 @@
 }
 .page-table .table table tbody tr {
   height: 7vh;
-  background-color: #1d1d1d81;
+  background-color: #AD822B;
 }
 .page-table .table table tbody tr td {
   width: 20%;
@@ -443,7 +443,7 @@
   position: relative;
   font-size: 12px !important;
   pointer-events: none;
-  background-color: #000;
+  background-color: #efefef;
 }
 .page-table .table table tbody .order-detail .data {
   padding: 1em;
@@ -467,19 +467,23 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  list-style: none;
 }
 .page-table .pagination ul li {
   text-align: center;
   width: 30px;
 }
 .page-table .pagination ul li a {
+  color: #000;
   border-radius: 3px;
+  text-decoration: none;
 }
 .page-table .pagination ul li a:hover {
-  background-color: #e2e2e2;
+  background-color: #f7e3ab;
+  color: #000;
 }
 .page-table .pagination ul li .selected {
-  background-color: #ffefef;
+  background-color: #AD822B;
   color: #000;
 }
 
@@ -502,7 +506,7 @@
 }
 .page-single .single-form form {
   margin-top: 2em;
-  background-color: #1d1d1d81;
+  background-color: #AD822B;
   opacity: 0.9;
   box-shadow: 0px 7px 20px #2e2e2e;
   border-radius: 9px;
@@ -544,7 +548,7 @@
   z-index: 11;
   bottom: 4vh;
   left: 5vw;
-  background-color: #1d1d1d81;
+  background-color: #AD822B;
   height: 50px;
   width: 50px;
   border-radius: 999px;
@@ -577,7 +581,7 @@
   left: 0px;
   height: 100vh;
   color: #000;
-  background-color: #1d1d1d81;
+  background-color: #AD822B;
   opacity: 0.9;
   transition: transform 0.7s ease-in;
 }
@@ -707,7 +711,7 @@
 }
 .page-store .products .items form button:hover {
   background-color: #000;
-  box-shadow: 0px 0px 8px #1d1d1d81;
+  box-shadow: 0px 0px 8px #AD822B;
   color: #efefef;
   transition: all 0.5s ease-in-out;
 }
@@ -741,7 +745,7 @@
 .page-cart .cart-list .items .info button:hover {
   cursor: pointer;
   background-color: #000;
-  box-shadow: 0px 0px 15px #1d1d1d81;
+  box-shadow: 0px 0px 15px #AD822B;
   color: #efefef;
   transition: all 0.5s ease-in-out;
 }
@@ -761,7 +765,7 @@
 .page-cart .cart-list .items .info .add button:hover {
   cursor: pointer;
   background-color: #000;
-  box-shadow: 0px 0px 15px #1d1d1d81;
+  box-shadow: 0px 0px 15px #AD822B;
   color: #efefef;
   transition: all 0.5s ease-in-out;
 }
@@ -793,7 +797,7 @@
 .page-cart .subtotal button:hover {
   cursor: pointer;
   background-color: #000;
-  box-shadow: 0px 0px 15px #1d1d1d81;
+  box-shadow: 0px 0px 15px #AD822B;
   color: #efefef;
   transition: all 0.5s ease-in-out;
 }
@@ -817,14 +821,14 @@
   padding: 5px;
   margin: 0.5em;
   border: none;
-  background-color: transparent;
+  background-color: #fff;
   color: #000;
   font-size: 0.8em;
   transition: all 0.5s ease-in-out;
 }
 .page-checkout .direcciones button:hover {
   background-color: #000;
-  box-shadow: 0px 0px 15px #1d1d1d81;
+  box-shadow: 0px 0px 15px #AD822B;
   color: #efefef;
   transition: all 0.5s ease-in-out;
 }
@@ -914,7 +918,7 @@
 }
 .page-checkout .check-info .payments button:hover {
   background-color: #000;
-  box-shadow: 0px 0px 15px #1d1d1d81;
+  box-shadow: 0px 0px 15px #AD822B;
   color: #efefef;
   transition: all 0.5s ease-in-out;
 }
@@ -937,15 +941,15 @@
   padding: 5px;
   margin: 0.5em;
   border: none;
-  background-color: transparent;
+  background-color: #ffffff;
   color: #000;
   transition: all 0.5s ease-in-out;
   font-size: 0.8em;
 }
 .page-directions .direcciones button:hover {
   cursor: pointer;
-  background-color: #000;
-  box-shadow: 0px 0px 15px #1d1d1d81;
+  background-color: #000000;
+  box-shadow: px 0px 15px #AD822B;
   color: #efefef;
   transition: all 0.5s ease-in-out;
 }
@@ -953,7 +957,7 @@
   border-radius: 15px;
   color: #000;
   padding: 1em !important;
-  background-color: #1d1d1d81;
+  background-color: #AD822B;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1181,7 +1185,7 @@
     width: 70%;
   }
   .page-store .products .items form button:hover {
-    box-shadow: 0px 0px 4px #1d1d1d81;
+    box-shadow: 0px 0px 4px #AD822B;
   }
 
   .line-pink {
@@ -1274,14 +1278,14 @@
     padding: 5px;
     margin: 0.5em;
     border: none;
-    background-color: transparent;
+    background-color: #fff;
     color: #000;
     font-size: 0.7em;
     transition: all 0.5s ease-in-out;
   }
   .page-checkout .direcciones button:hover {
     background-color: #000;
-    box-shadow: 0px 0px 15px #1d1d1d81;
+    box-shadow: 0px 0px 15px #AD822B;
     color: #efefef;
     transition: all 0.5s ease-in-out;
   }
@@ -1451,7 +1455,7 @@
   }
   .page-single .single-form form {
     margin-top: 2em;
-    background-color: #1d1d1d81;
+    background-color: #AD822B;
     opacity: 0.9;
     box-shadow: 0px 7px 20px #2e2e2e;
     border-radius: 9px;
@@ -1875,14 +1879,14 @@
     padding: 5px;
     margin: 0.5em;
     border: none;
-    background-color: transparent;
+    background-color: #fff;
     color: #000;
     font-size: 1em;
     transition: all 0.5s ease-in-out;
   }
   .page-checkout .direcciones button:hover {
     background-color: #000;
-    box-shadow: 0px 0px 15px #1d1d1d81;
+    box-shadow: 0px 0px 15px #AD822B;
     color: #efefef;
     transition: all 0.5s ease-in-out;
   }
