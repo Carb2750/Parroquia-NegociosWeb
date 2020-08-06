@@ -7,14 +7,7 @@
             </div>
             <br>
         </div>
-        <div class="buscador col-offset-s-1 col-offset-m-2 col-offset-4 no-padding">
-            <form action="index.php?page=Acceso&cod={{typeCod}}" method="post" class="col-s-12">
-                <input type="hidden" name="typeCod" id="typeCod" value="{{typeCod}}">
-                <input class="col-s-8 col-5 no-padding"type="text" name="txtFiltrarA" id="txtFiltrarA" {{if errorA}} placeholder="{{errorA}}" {{endif errorA}} 
-                placeholder="Filtar por Codigo..">
-                <button type="submit" id="btnFiltarA" name="btnFiltrarA" class="col-s-3 col-m-2 col-1 no-padding"><i class="fas fa-search"></i></button>
-            </form>
-        </div>
+        
         <div class="table">
             <table class="col-s-12 no-margin no-padding">
                 <thead>

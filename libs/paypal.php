@@ -5,8 +5,8 @@ function getApiContext()
 {
     $apiContext = new \PayPal\Rest\ApiContext(
         new \PayPal\Auth\OAuthTokenCredential(
-            '',     // ClientID
-            ''      // ClientSecret
+            'AQ69Q6wuPIdAPZnPEfGpS74AzQDR0mMwVwQUxjMkclNJ2wTe98SiaH7AlJEkwKHETfvYQQCL4doU8D5Q',     // ClientID
+            'EK9lK0RmGgoLyd7Qesx5qYPM4z2zGG6uuC3pQJwL83cXQZV0Oiy6l1_fESn1p6BlAzzWvSstAzQcoh5_'      // ClientSecret
         )
     );
     return $apiContext;
@@ -44,8 +44,8 @@ function createPaypalTransacction($products, $subtotal,$shipping,$total)
     $redirectUrls = new \PayPal\Api\RedirectUrls();
 
     $redirectUrls
-        ->setReturnUrl("http://localhost/NegociosWeb/Parroquia-NegociosWeb/index.php?page=Approved") //URL aprovado
-        ->setCancelUrl("http://localhost/NegociosWeb/Parroquia-NegociosWeb/index.php?page=Canceled"); //URL cancelado
+        ->setReturnUrl("http://127.0.0.1/negociosweb/III%20Parcial/Parroquia-NegociosWeb/index.php?page=Approved") //URL aprovado
+        ->setCancelUrl("http://127.0.0.1/negociosweb/III%20Parcial/Parroquia-NegociosWeb/index.php?page=Canceled"); //URL cancelado
 
     $payment = new \PayPal\Api\Payment();
     $payment->setIntent('sale')
