@@ -4,40 +4,6 @@
         <div class="action-title">
             <h1 class="row col-s-12">Manejo de Ordenes</h1>
         </div>
-        <div class="buscador col-offset-s-1 col-offset-m-1 col-offset-3 no-padding">
-            <form action="index.php?page=Ordenes" method="post" class="col-s-12">
-            <select class="options" name="statusesCMB" id="statusesCMB">
-               {{foreach statuses}}
-                <option value="{{statusCod}}" {{selected}}>{{statusDscES}}</option>
-               {{endfor statuses}}
-            </select>
-            <select class="options" name="recentCMB" id="recentCMB">
-                {{foreach orderBy}}
-                    <option value={{cod}} {{selected}}>{{Dsc}}</option>
-                {{endfor orderBy}}
-            </select>
-            <input class="col-s-8 col-m-4 col-5 no-padding"type="text" name="txtFiltar" id="txtFiltar" {{if error}} placeholder="{{error}}" {{endif error}} 
-            placeholder="Filtar por nombre..">
-            <button type="submit" id="btnFiltar" name="btnFiltrar" class="col-s-2 col-m-1 col-1 no-padding"><i class="fas fa-search"></i></button>
-            {{if recentCMB}}
-                <button type="submit" id="btnWat" name="btnWat" class="col-s-2 col-m-1 col-1 no-padding"><i class="fas fa-ban"></i></button>
-            {{endif recentCMB}}
-            </form>
-        </div>
-        <div class="pagination">
-            <ul>
-                {{if show}}
-                    {{foreach pagination}}
-                        <li><a href="index.php?page=Ordenes&n={{cod}}"  class="{{selected}}">{{cod}}</a></li>
-                    {{endfor pagination}}
-                {{endif show}}
-                {{if recentCMB}}
-                     {{foreach pagination}}
-                        <li><a href="index.php?page=Ordenes&recentCMB={{recentCMB}}&statusesCMB={{statusesCMB}}&txtFiltrar={{txtFiltrar}}&n={{cod}}" class="{{selected}}">{{cod}}</a></li>
-                    {{endfor pagination}}
-                {{endif recentCMB}}
-            </ul>
-        </div>
         <div class="table">
             <table class="col-s-12 no-margin no-padding">
                 <thead>
